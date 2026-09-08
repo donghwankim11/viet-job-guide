@@ -33,6 +33,8 @@
     color:var(--ink);margin:0 0 4px;letter-spacing:-.015em;}
   .lede{font-size:15px;color:var(--ink-2);line-height:1.45;margin:0 0 10px;max-width:1120px;}
   .content-body{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;gap:9px;}
+  /* 내용이 적은 장표는 본문을 세로 가운데로 모아 여백이 위아래로 갈리지 않게 */
+  .body-wrap{justify-content:center;}
 
   ul.bullets{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;}
   ul.bullets li{display:flex;gap:11px;align-items:flex-start;font-size:15.5px;line-height:1.45;color:var(--ink);}
@@ -193,6 +195,9 @@
   .script .ko-sub strong{color:#B6C8D6;}
   .qa-slide .ko-sub{color:var(--ink-3);}
   .ko-sub .tag{font-size:9px;padding:1px 6px;vertical-align:1px;}
+  .body-wrap{display:flex;flex-direction:column;flex:1 1 auto;}
+  .title-slide .body-wrap,.divider .body-wrap{justify-content:center;}
+  .qa-slide .body-wrap{justify-content:center;align-items:center;}
   .meta span{border-radius:16px;}
 
   #nav{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;
@@ -219,6 +224,7 @@
 
   <!-- 1 TITLE -->
   <section class="slide title-slide active">
+    <div class="body-wrap">
     <div class="stripe"></div>
     <p class="kicker" data-i18n="s01k">2026 베트남 유학생 취업·비자 컨설팅</p>
     <h1 data-i18n="s01t">한국 취업 종합 가이드</h1>
@@ -227,11 +233,13 @@
       <span data-i18n="s01m1">강사 · 현대차 계열사 · 하나금융 계열사 · CJ 계열사 · 우아한형제들 / Data Scientist · AI Engineer (10년차)</span>
       <span data-i18n="s01m2">2026. 9. 19. (토) · 아주대 인근 스터디룸</span>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 2 강사 소개 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.44">
     <p class="kicker" data-i18n="s02k">Intro</p>
     <h1 class="slide-title" data-i18n="s02t">오늘 만나서 반갑습니다</h1>
     <div class="content-body">
@@ -254,11 +262,13 @@
       </div>
       <div class="highlight" data-i18n="s02hl">오늘 제가 드리려는 것은 <strong>여러분의 서류를 실제로 읽고 면접장에 앉아 있는 사람이 무엇을 보는가</strong>입니다. 면접관이 서류에서 찾는 것, 그리고 어떤 답변에서 신뢰를 잃는지는 직무와 연차를 떠나 놀랄 만큼 비슷합니다.</div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 3 오늘 가져갈 것 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.46">
     <p class="kicker" data-i18n="s03k">Goal</p>
     <h1 class="slide-title" data-i18n="s03t">오늘 이 강의가 끝나면</h1>
     <div class="content-body">
@@ -281,11 +291,13 @@
       </div>
       <div class="highlight cool" data-i18n="s03hl">오늘 강의는 "이렇게 하세요"로 끝나지 않습니다. 모든 장표에 <strong>그대로 따라 할 수 있는 문장, 표, 체크리스트</strong>를 넣어 두었습니다. 강의가 끝난 뒤 이 자료만 다시 보셔도 준비를 이어가실 수 있습니다.</div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 4 목차 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s04k">Agenda</p>
     <h1 class="slide-title" data-i18n="s04t">오늘의 순서</h1>
     <p class="lede" data-i18n="s04l">본 강의는 약 30분입니다. 다만 이 자료는 <strong>강의가 끝난 뒤 혼자 다시 볼 수 있도록</strong> 실제 예문과 표를 넉넉히 담았습니다. 오늘 넘어가는 장표가 있더라도 나중에 꼭 다시 펼쳐 보세요.</p>
@@ -303,19 +315,23 @@
         </tbody>
       </table>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 5 PART1 divider -->
   <section class="slide divider">
+    <div class="body-wrap" style="zoom:1.06">
     <p class="plab" data-i18n="s05p">PART 1</p>
     <h1 data-i18n="s05t">먼저 현실을 숫자로 봅시다</h1>
     <p class="lede" data-i18n="s05l">막연한 불안은 준비를 방해합니다. 여러분이 어떤 위치에 서 있는지, 무엇이 실제로 합격을 결정하는지 공식 통계로 확인하고 시작하겠습니다.</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 6 유학생 국적 1위 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s06k">Where You Stand</p>
     <h1 class="slide-title" data-i18n="s06t">여러분은 이제 한국에서 가장 큰 유학생 그룹입니다</h1>
     <p class="lede" data-i18n="s06l">2026년, 베트남 유학생이 사상 처음으로 중국을 제치고 국적별 1위가 되었습니다. 전년 대비 28.9% 늘었습니다.</p>
@@ -335,11 +351,13 @@
       <p class="note" data-i18n="s06n">숫자가 늘었다는 것은 <strong>한국 기업이 베트남 인재를 점점 익숙하게 받아들이고 있다는 뜻</strong>입니다. 베트남어를 쓸 수 있는 사람을 찾는 자리도 함께 늘고 있습니다. 다만 그만큼 준비된 지원자와 비교되기도 하니, 오늘은 그 "준비"를 구체적으로 다뤄보겠습니다.</p>
     </div>
     <p class="src">출처: 교육부·한국교육개발원 「2026년 교육기본통계」(2026.08.26 발표) · <a href="https://www.hankyung.com/article/2026082648041" target="_blank" rel="noopener">한국경제</a> · <a href="https://www.imaeil.com/page/view/2026082615115974304" target="_blank" rel="noopener">매일신문</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 7 희망 vs 현실 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s07k">The Gap</p>
     <h1 class="slide-title" data-i18n="s07t">희망은 86.5%, 실제 취업은 33.4%</h1>
     <p class="lede" data-i18n="s07l">이 간격이 오늘 강의가 존재하는 이유입니다. 이 격차는 능력의 차이가 아니라, 대부분 <strong>준비 방법을 몰라서</strong> 생깁니다.</p>
@@ -355,11 +373,13 @@
       </div>
     </div>
     <p class="src">출처: 교육부·KEDI 「2024년도 고등교육기관 졸업자 취업통계」(2025.12) · <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=105011&amp;lev=0&amp;m=020402" target="_blank" rel="noopener">교육부</a> / 중소기업중앙회 유학생 805명 조사(2025.03) · <a href="https://www.ekw.co.kr/news/articleView.html?idxno=12132" target="_blank" rel="noopener">동포세계신문</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 8 졸업생 퍼널 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.16">
     <p class="kicker" data-i18n="s08k">The Funnel</p>
     <h1 class="slide-title" data-i18n="s08t">외국인 유학생 졸업자는 어디로 갔을까요</h1>
     <p class="lede" data-i18n="s08l">한 해 외국인 유학생 졸업자가 실제로 어떤 경로를 밟았는지 따라가 보면, 어느 단계에서 사람들이 빠져나가는지 보입니다.</p>
@@ -374,11 +394,13 @@
       <p class="note" data-i18n="s08n"><strong>33.4%라는 숫자는 조심해서 읽어야 합니다.</strong> 이 안에는 <strong>한국 취업을 아예 시도하지 않은 사람</strong>도 함께 들어 있습니다. 실제로 졸업생의 42.9%는 지원도 하지 않고 한국을 떠났습니다. 그러니 "지원하면 3분의 1만 붙는다"는 뜻이 아닙니다. <strong>끝까지 준비한 사람이 많지 않다</strong>는 뜻에 가깝습니다. 게다가 이 숫자는 1년 만에 21.7%에서 33.4%로 올랐습니다. <strong>문이 닫히는 중이 아니라 열리는 중입니다.</strong></p>
     </div>
     <p class="src">출처: 교육부·한국교육개발원 「2024년도 고등교육기관 졸업자 취업통계」 — 건강보험·출입국 DB 연계 산출 · <a href="https://www.etoday.co.kr/news/view/2615138" target="_blank" rel="noopener">이투데이 보도</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 9 연봉 비교 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s09k">Why Korea</p>
     <h1 class="slide-title" data-i18n="s09t">한국 취업이 왜 매력적인가 — 그리고 그 숫자를 정직하게 읽는 법</h1>
     <div class="content-body">
@@ -398,11 +420,13 @@
       <p class="note" data-i18n="s09n">기준연도와 조사 성격이 다릅니다 — 한국은 2023년 기준 <strong>정부 통계</strong>(고용노동부 자료를 경총이 분석), 베트남은 2024~25년 기준 <strong>민간 채용사 리포트</strong>(Reeracoen)입니다. 환율 1 VND ≈ 0.0517 KRW(2026.9 기준)로 환산했습니다. 그리고 연봉만이 이유는 아닙니다. 한국에서 쌓은 경력은 <strong>귀국 후 베트남 시장에서도 프리미엄</strong>이 됩니다.</p>
     </div>
     <p class="src">출처: 한국경영자총협회 「대졸초임 분석」(2025.01, 고용노동부 2023년 고용형태별 근로실태조사) · <a href="https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000191616" target="_blank" rel="noopener">KDI</a> / <a href="https://www.reeracoen.com.vn/en/articles/fresh-graduate-in-vietnam-2026-how-to-turn-your-degree-into-a-first-job-offer-before-year-end" target="_blank" rel="noopener">Reeracoen Vietnam Salary Guide</a> / <a href="https://www.nongmin.com/article/20240309500021" target="_blank" rel="noopener">생활비 비교</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 10 TOPIK 6급의 함정 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s10k">Key Message</p>
     <h1 class="slide-title" data-i18n="s10t">TOPIK 6급은 더 이상 차별화가 아닙니다</h1>
     <div class="content-body">
@@ -426,11 +450,13 @@
       <p class="note" data-i18n="s10n">반대로 말하면 희망적입니다. 6급이 흔해진 만큼, <strong>6급 + 잘 준비된 자소서와 면접</strong>이면 상위 소수에 들어갑니다. 그 "+" 부분이 오늘 강의의 전부입니다.</p>
     </div>
     <p class="src">출처: 중소기업중앙회 「외국인 유학생 805명 대상 조사」(2025.03.26 발표) · <a href="https://www.ekw.co.kr/news/articleView.html?idxno=12132" target="_blank" rel="noopener">동포세계신문</a> · <a href="https://talent-link.co.kr/blog_detail?bg_idx=253" target="_blank" rel="noopener">TOPIK 점수보다 실전 한국어가 중요한 이유</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 11 무엇이 당락을 가르나 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s11k">What Actually Matters</p>
     <h1 class="slide-title" data-i18n="s11t">그럼 인사담당자는 무엇을 보고 결정할까요</h1>
     <p class="lede" data-i18n="s11l">인사담당자 582명에게 "이력서에서 가장 중요하게 평가하는 항목"을 물은 결과입니다. 유학생에게는 아주 희망적인 데이터입니다.</p>
@@ -447,11 +473,13 @@
       <p class="note" data-i18n="s11n"><strong>학점이 걱정되신다면:</strong> 인사담당자 475명에게 물은 다른 조사(복수응답)에서도 <strong>직무 경험 90.1%</strong>가 1위였고, <strong>학점은 19.4%로 6개 항목 중 5위</strong>였습니다(자격증 52.4% · 전공 52.0% · 최종학력 27.6% · 출신학교 17.9%). 학점 때문에 지원을 포기할 이유는 없습니다. 다만 <strong>질문으로 돌아올 수는 있습니다.</strong> 그때는 변명하지 말고 ① 사실을 인정하고 ② 그 시기에 무엇에 시간을 썼는지 ③ 이후에 어떻게 달라졌는지(성적 추이·프로젝트 성과) 순서로 답하세요. 면접관이 보는 것은 점수가 아니라 <strong>그것을 대하는 태도</strong>입니다.</p>
     </div>
     <p class="src">출처: 잡코리아 「인사담당자 582명 설문」(2020.07.16) · <a href="https://www.jobkorea.co.kr/goodjob/tip/view?News_No=18164" target="_blank" rel="noopener">잡코리아</a> / 인크루트 「인사담당자 475명 조사」 · <a href="https://www.anjunj.com/news/articleView.html?idxno=37205" target="_blank" rel="noopener">안전저널 보도</a> · <a href="https://news.incruit.com/news/newsview.asp?newsno=436537" target="_blank" rel="noopener">인크루트 — 학점 질문 답변 예시</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 기업 수요 + 타깃 직무 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="n1k">Target Strategy</p>
     <h1 class="slide-title" data-i18n="n1t">"한국 회사가 외국인을 안 뽑는 것 아닌가요?"</h1>
     <p class="lede" data-i18n="n1l">가장 많이 듣는 질문입니다. 데이터는 정반대를 말합니다 — <strong>기업은 뽑고 싶어 하는데, 여러분을 찾지 못하고 있습니다.</strong></p>
@@ -481,11 +509,13 @@
       </div>
     </div>
     <p class="src">출처: <a href="https://kowork.kr/blog/survey" target="_blank" rel="noopener">KOWORK — 2025 외국인 채용 현황 설문(인사담당자 100명)</a> · <a href="https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000195955" target="_blank" rel="noopener">KDI — 외국인 유학생 채용 지원제도(한국무역협회 287개사)</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- PART2 divider -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.54">
     <p class="kicker" data-i18n="n1kq3">Target Strategy</p>
     <h1 class="slide-title" data-i18n="n1tq3">"한국 회사가 외국인을 안 뽑는 것 아닌가요?" (계속)</h1>
     <div class="content-body">
@@ -493,18 +523,22 @@
       <p class="note" data-i18n="n1n">참고로 지원 전 <a href="https://www.hikorea.go.kr" target="_blank" rel="noopener">하이코리아</a>의 <strong>'외국인 고용 가능 여부 조회'</strong>로 그 회사가 외국인을 고용할 수 있는 상태인지 미리 확인할 수 있습니다.</p>
     </div>
     <p class="src">출처: <a href="https://kowork.kr/blog/survey" target="_blank" rel="noopener">KOWORK — 2025 외국인 채용 현황 설문(인사담당자 100명)</a> · <a href="https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000195955" target="_blank" rel="noopener">KDI — 외국인 유학생 채용 지원제도(한국무역협회 287개사)</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide divider">
+    <div class="body-wrap" style="zoom:1.06">
     <p class="plab" data-i18n="s12p">PART 2</p>
     <h1 data-i18n="s12t">자소서는 쓰는 것이 아니라, 모아둔 것을 꺼내는 것입니다</h1>
     <p class="lede" data-i18n="s12l">지원 마감 1주일 전에 좋은 자소서를 쓰는 방법은 없습니다. 지금 학교에서 하고 있는 일들이 곧 자소서의 재료입니다. 그 재료를 어떻게 고르고 남겨둘지 이야기하겠습니다.</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 역산 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.34">
     <p class="kicker" data-i18n="s13k">Reverse Engineering</p>
     <h1 class="slide-title" data-i18n="s13t">거꾸로 생각해야 합니다</h1>
     <p class="lede" data-i18n="s13l">대부분의 학생은 왼쪽 순서로 움직입니다. 합격하는 학생은 오른쪽 순서로 움직입니다.</p>
@@ -523,11 +557,13 @@
       </div>
       <div class="highlight" data-i18n="s13hl">채용공고는 <strong>시험 범위표</strong>입니다. 아직 지원할 때가 아니어도 지금 읽어보세요. "우대사항"에 적힌 문장들이 앞으로 2년간 여러분이 만들어야 할 목록입니다.</div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 과목 선택 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.12">
     <p class="kicker" data-i18n="s14k">Course Selection</p>
     <h1 class="slide-title" data-i18n="s14t">수강신청이 곧 자소서 전략입니다</h1>
     <p class="lede" data-i18n="s14l">같은 학점 3점이라도, 어떤 과목을 듣느냐에 따라 자소서에 쓸 수 있는 이야기가 완전히 달라집니다.</p>
@@ -554,11 +590,13 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://anchor.ajou.ac.kr/?m=10125&amp;s=10129&amp;t=10148" target="_blank" rel="noopener">아주대학교 앵커사업단 캡스톤디자인 안내</a> · <a href="https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EB%AA%A8%EB%93%A0%EC%A7%81%EB%AC%B4/%EC%BA%A1%EC%8A%A4%ED%86%A4%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%B4%EB%82%98_%EA%B8%B0%ED%83%80_%EC%A0%84%EA%B3%B5%EA%B3%BC%EB%AA%A9%EC%97%90%EC%84%9C_%ED%95%98%EB%8A%94_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%93%A4%EB%8F%84_%EC%A7%81%EB%AC%B4%EA%B2%BD%ED%97%98%EC%9D%BC%EA%B9%8C%EC%9A%94-467876" target="_blank" rel="noopener">코멘토 — 전공 프로젝트도 직무경험으로 인정되는가</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- ★ 경영대 예시 1, 2 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.66">
     <p class="kicker" data-i18n="s14kc15">Course Selection</p>
     <h1 class="slide-title" data-i18n="s14tc15">수강신청이 곧 자소서 전략입니다 (계속)</h1>
     <div class="content-body">
@@ -566,10 +604,12 @@
       <p class="note" data-i18n="s14n4"><strong>"저는 이미 4학년인데요 / 대학원생인데요" — 늦지 않았습니다.</strong> 새로 만들 시간이 없다면 <strong>이미 한 것을 꺼내세요.</strong> 지난 3~4년간 들은 수업의 팀 프로젝트·텀페이퍼·발표 자료를 전부 찾아보세요. 노트북, 이메일, 구글 드라이브, 단톡방에 남아 있습니다. 앞으로 볼 세 가지 사례도 전부 <strong>평범한 수업 과제</strong>였습니다. 남은 학기가 한 학기라도 있다면, 다음 수강신청에 <strong>프로젝트나 소논문이 있는 과목 하나</strong>만 넣으세요.</p>
     </div>
     <p class="src">출처: <a href="https://anchor.ajou.ac.kr/?m=10125&amp;s=10129&amp;t=10148" target="_blank" rel="noopener">아주대학교 앵커사업단 캡스톤디자인 안내</a> · <a href="https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EB%AA%A8%EB%93%A0%EC%A7%81%EB%AC%B4/%EC%BA%A1%EC%8A%A4%ED%86%A4%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%B4%EB%82%98_%EA%B8%B0%ED%83%80_%EC%A0%84%EA%B3%B5%EA%B3%BC%EB%AA%A9%EC%97%90%EC%84%9C_%ED%95%98%EB%8A%94_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%93%A4%EB%8F%84_%EC%A7%81%EB%AC%B4%EA%B2%BD%ED%97%98%EC%9D%BC%EA%B9%8C%EC%9A%94-467876" target="_blank" rel="noopener">코멘토 — 전공 프로젝트도 직무경험으로 인정되는가</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s15k">Worked Example · 경영대 사례</p>
     <h1 class="slide-title" data-i18n="s15t">실제로 해봅시다 ① — 수업 과제를 STAR와 숫자로</h1>
     <p class="lede" data-i18n="s15l">경영대 학생이라면 누구나 해봤을 두 가지 과제입니다. 각 카드의 <strong>붉은 문장</strong>이 대부분의 학생이 쓰는 방식이고, <strong>그 아래가 같은 경험을 다시 쓴 것</strong>입니다. 새로운 경험을 만든 것이 아니라 <strong>같은 경험을 다르게 적었을 뿐</strong>이라는 점에 주목해 주세요.</p>
@@ -597,11 +637,13 @@
         </div>
       </div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- ★ 경영대 예시 3 + 원리 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s16k">Worked Example · 경영대 사례</p>
     <h1 class="slide-title" data-i18n="s16t">실제로 해봅시다 ② — 갈등까지 포함된 조별 과제</h1>
     <div class="content-body">
@@ -619,11 +661,13 @@
       <p class="note" data-i18n="s16n"><strong>중요 — 숫자를 지어내지 마세요.</strong> 없는 성과를 만들면 꼬리질문에서 반드시 드러나고, 그 순간 나머지 답변의 신뢰도까지 함께 무너집니다. 기억나지 않으면 "약 100명 규모"처럼 범위로 쓰거나, 숫자 대신 과정과 역할을 구체적으로 쓰는 편이 안전합니다.</p>
     </div>
     <p class="src">출처: <a href="https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EB%A7%88%EC%BC%80%ED%8C%85/%EC%9E%90%EC%86%8C%EC%84%9C_%EA%B2%BD%ED%97%98%20%EC%88%98%EC%B9%98%ED%99%94-600677" target="_blank" rel="noopener">코멘토 — 자소서 경험 수치화(객관적이지 않은 정량화는 신뢰도를 떨어뜨린다)</a> · <a href="https://community.linkareer.com/employment_data/4464545" target="_blank" rel="noopener">링커리어 — STAR 작성 템플릿</a> · 예시 문장은 강의용으로 직접 구성</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 숫자로 바꾸는 3축 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.54">
     <p class="kicker" data-i18n="s17k">Quantifying</p>
     <h1 class="slide-title" data-i18n="s17t">숫자가 없다고 생각될 때 쓰는 3가지 방법</h1>
     <div class="content-body">
@@ -634,11 +678,13 @@
       </div>
     </div>
     <p class="src">출처: <a href="https://www.haijob.co.kr/blog/how-to-write-a-cover-letter-job-competency-examples-and-frequent-mistakes/" target="_blank" rel="noopener">HAIJOB — 직무역량 작성법과 흔한 실수</a> · <a href="https://www.haijob.co.kr/blog/how-to-write-a-cover-letter-self-introduction-experience-summary-template-examples-of-self-introduction-experiences-feat-hijab/" target="_blank" rel="noopener">HAIJOB — 경험정리 템플릿</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 경험정리표 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s17kc14">Quantifying</p>
     <h1 class="slide-title" data-i18n="s17tc14">숫자가 없다고 생각될 때 쓰는 3가지 방법 (계속)</h1>
     <div class="content-body">
@@ -651,10 +697,12 @@
       <p class="note" data-i18n="s17n4"><strong>"제 과제엔 정말 숫자가 없어요" — 지어내지 말고, 세어 보세요.</strong> 아래는 전부 사실이고 전부 셀 수 있습니다: 팀원 수 · 내가 맡은 파트 수 · 과제 기간(주) · 발표 시간(분) · 보고서 분량(장) · 읽은 자료 수 · 설문 응답 수 · 인터뷰 인원 · 비교한 경쟁사 수 · 분석한 데이터 기간(개년) · 회의 횟수 · 전체 팀 수와 우리 팀 등수 · 상호평가 점수. <strong>이 중 하나만 있어도 문장이 달라집니다</strong> — "열심히 조사했습니다" → "선행연구 12편을 검토했습니다". 성과를 부풀리는 것이 아니라 <strong>이미 한 일을 정확하게 적는 것</strong>입니다.</p>
     </div>
     <p class="src">출처: <a href="https://www.haijob.co.kr/blog/how-to-write-a-cover-letter-job-competency-examples-and-frequent-mistakes/" target="_blank" rel="noopener">HAIJOB — 직무역량 작성법과 흔한 실수</a> · <a href="https://www.haijob.co.kr/blog/how-to-write-a-cover-letter-self-introduction-experience-summary-template-examples-of-self-introduction-experiences-feat-hijab/" target="_blank" rel="noopener">HAIJOB — 경험정리 템플릿</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s18k">Template</p>
     <h1 class="slide-title" data-i18n="s18t">오늘 저녁부터 만드세요 — 경험정리표</h1>
     <p class="lede" data-i18n="s18l">지원 시즌마다 처음부터 쓰는 사람과, 표에서 골라 쓰는 사람의 차이는 결정적입니다. 노션·엑셀·구글시트 무엇이든 좋습니다.</p>
@@ -670,21 +718,25 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://community.linkareer.com/employment_data/4687369" target="_blank" rel="noopener">링커리어 — 자소서 경험 정리 3단계</a> · <a href="https://community.linkareer.com/employment_data/4899347" target="_blank" rel="noopener">링커리어 — 노션 활용법</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 대외활동 가성비 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.66">
     <p class="kicker" data-i18n="s18kq2">Template</p>
     <h1 class="slide-title" data-i18n="s18tq2">오늘 저녁부터 만드세요 — 경험정리표 (계속)</h1>
     <div class="content-body">
       <div class="highlight cool" data-i18n="s18hl">만드는 순서는 <strong>① 가능한 경험을 전부 나열 → ② 직무 관련 역량 키워드 추출 → ③ STAR로 한 줄 압축</strong> 세 단계입니다. 경험 하나가 자소서 문항 <strong>2~4개</strong>에 재사용된다는 점에 주목하세요. 좋은 경험 <strong>4~5개</strong>면 대부분의 회사에 지원할 수 있습니다.</div>
     </div>
     <p class="src">출처: <a href="https://community.linkareer.com/employment_data/4687369" target="_blank" rel="noopener">링커리어 — 자소서 경험 정리 3단계</a> · <a href="https://community.linkareer.com/employment_data/4899347" target="_blank" rel="noopener">링커리어 — 노션 활용법</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s19k">Priorities</p>
     <h1 class="slide-title" data-i18n="s19t">시간이 한정되어 있다면, 이 순서로</h1>
     <div class="content-body">
@@ -701,21 +753,25 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EB%AA%A8%EB%93%A0%EC%A7%81%EB%AC%B4/%EC%84%9C%EB%A5%98_%ED%95%A9%EA%B2%A9%EB%A5%A0%EC%9D%B4_%EC%A0%80%EC%A1%B0%ED%95%A9%EB%8B%88%EB%8B%A4_%EC%8A%A4%ED%8E%99_%ED%8F%89%EA%B0%80_%EB%B6%80%ED%83%81%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4-607601" target="_blank" rel="noopener">코멘토 — 스펙 평가</a> · <a href="https://community.linkareer.com/employment_data/5108233" target="_blank" rel="noopener">링커리어 — 채용연계형 인턴 가이드</a> · <a href="https://community.linkareer.com/employment_data/5201351" target="_blank" rel="noopener">링커리어 — 학부연구생 가이드</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 유학생 인턴 가능 여부 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.66">
     <p class="kicker" data-i18n="s19kc13">Priorities</p>
     <h1 class="slide-title" data-i18n="s19tc13">시간이 한정되어 있다면, 이 순서로 (계속)</h1>
     <div class="content-body">
       <div class="highlight" data-i18n="s19hl"><strong>양보다 질입니다.</strong> 활동 10개를 얕게 나열한 자소서보다, 직무와 연결되는 경험 <strong>1~2개</strong>를 깊이 있게 쓴 자소서가 이깁니다. 잠시 후에 보시겠지만, 인사담당자가 가장 싫어하는 자소서 1위가 "산만하고 요점이 분명하지 않은 글"입니다.</div>
     </div>
     <p class="src">출처: <a href="https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EB%AA%A8%EB%93%A0%EC%A7%81%EB%AC%B4/%EC%84%9C%EB%A5%98_%ED%95%A9%EA%B2%A9%EB%A5%A0%EC%9D%B4_%EC%A0%80%EC%A1%B0%ED%95%A9%EB%8B%88%EB%8B%A4_%EC%8A%A4%ED%8E%99_%ED%8F%89%EA%B0%80_%EB%B6%80%ED%83%81%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4-607601" target="_blank" rel="noopener">코멘토 — 스펙 평가</a> · <a href="https://community.linkareer.com/employment_data/5108233" target="_blank" rel="noopener">링커리어 — 채용연계형 인턴 가이드</a> · <a href="https://community.linkareer.com/employment_data/5201351" target="_blank" rel="noopener">링커리어 — 학부연구생 가이드</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="n2k">Can I Even Do This?</p>
     <h1 class="slide-title" data-i18n="n2t">"저는 유학생인데 인턴을 할 수 있나요?"</h1>
     <p class="lede" data-i18n="n2l"><strong>할 수 있습니다. 다만 반드시 허가를 먼저 받아야 합니다.</strong> D-2 학위과정 유학생은 전공 관련 인턴십이 허용 직무에 포함되며, 방학 중에는 전문분야 인턴 근무도 가능합니다.</p>
@@ -733,11 +789,13 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://www.jobploy.kr/ko/content/2026-international-student-part-time-work-permit-guide" target="_blank" rel="noopener">잡플로이 — 2026년 유학생 시간제취업 허가 가이드</a> · <a href="https://kowork.kr/blog/D-2internshipforbreak" target="_blank" rel="noopener">KoWork — 방학 중 유학생 인턴십</a> · <a href="https://www.gov.kr/portal/service/serviceInfo/PTR000050524" target="_blank" rel="noopener">정부24 — 시간제취업 허가</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- PART3 divider -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.56">
     <p class="kicker" data-i18n="n2kc12">Can I Even Do This?</p>
     <h1 class="slide-title" data-i18n="n2tc12">"저는 유학생인데 인턴을 할 수 있나요?" (계속)</h1>
     <div class="content-body">
@@ -748,18 +806,22 @@
       <p class="note" style="color:var(--bad)" data-i18n="n2n">⚠️ 학기 중 허용 시간은 자료마다 주 25시간·30시간으로 다르게 안내됩니다. <strong>신청 전 반드시 하이코리아 또는 외국인종합안내센터 1345에서 본인 기준을 확인</strong>하세요. 학교 국제처에 문의하는 것이 가장 빠릅니다.</p>
     </div>
     <p class="src">출처: <a href="https://www.jobploy.kr/ko/content/2026-international-student-part-time-work-permit-guide" target="_blank" rel="noopener">잡플로이 — 2026년 유학생 시간제취업 허가 가이드</a> · <a href="https://kowork.kr/blog/D-2internshipforbreak" target="_blank" rel="noopener">KoWork — 방학 중 유학생 인턴십</a> · <a href="https://www.gov.kr/portal/service/serviceInfo/PTR000050524" target="_blank" rel="noopener">정부24 — 시간제취업 허가</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide divider">
+    <div class="body-wrap" style="zoom:1.06">
     <p class="plab" data-i18n="s20p">PART 3</p>
     <h1 data-i18n="s20t">자기소개서 — 10분 안에 승부를 봐야 합니다</h1>
     <p class="lede" data-i18n="s20l">여러분이 3일 동안 쓴 자소서를 인사담당자는 몇 분 만에 읽습니다. 그 사실을 알고 쓰는 것과 모르고 쓰는 것의 차이는 매우 큽니다.</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 검토 시간 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s21k">Reality Check</p>
     <h1 class="slide-title" data-i18n="s21t">여러분의 자소서가 실제로 읽히는 시간</h1>
     <div class="content-body">
@@ -772,11 +834,13 @@
       <p class="note" data-i18n="s21n">외국인 지원자에게는 오히려 유리한 소식이기도 합니다. 아름다운 한국어 문장을 길게 쓸 필요가 없다는 뜻이니까요. <strong>짧고 명확한 문장 + 앞에 놓인 결론 + 숫자</strong>가 화려한 표현보다 높은 평가를 받습니다.</p>
     </div>
     <p class="src">출처: <a href="https://www.saramin.co.kr/zf_user/help/live/view?idx=28904&amp;nomo=1&amp;listType=news" target="_blank" rel="noopener">사람인 — 서류전형 합격 여부, 10분이면 결정</a> · <a href="https://www.jobkorea.co.kr/goodjob/tip/view?News_No=18164" target="_blank" rel="noopener">잡코리아 — 신입 지원서 검토에 평균 10.2분</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 좋은/나쁜 자소서 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s22k">Recruiter Survey</p>
     <h1 class="slide-title" data-i18n="s22t">인사담당자 794명이 꼽은 좋은 자소서와 나쁜 자소서</h1>
     <div class="content-body">
@@ -807,11 +871,13 @@
       <div class="highlight" data-i18n="s22hl">양쪽 1위가 정확히 대칭입니다 — <strong>"산만함"(51.5%) ↔ "핵심이 명확함"(45.1%)</strong>. 화려한 문장력은 좋은 자소서 항목에서 6위(12.5%)에 불과합니다. <strong>한국어를 잘 쓰는 것보다, 하고 싶은 말이 분명한 것이 훨씬 중요합니다.</strong></div>
     </div>
     <p class="src">출처: <a href="https://www.jobkorea.co.kr/goodjob/tip/view?News_No=11760" target="_blank" rel="noopener">잡코리아 — 인사담당자 794명이 꼽은 좋은 자소서 vs 나쁜 자소서</a> (2017.03.13)</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 필살기 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s23k">Core Framework</p>
     <h1 class="slide-title" data-i18n="s23t">"필살기" — 자소서와 면접을 관통하는 하나의 개념</h1>
     <p class="lede" data-i18n="s23l">자소서 문항이 몇 개든, 면접 질문이 몇 개든, 결국 준비해야 할 것은 <strong>잘 만든 경험 3~5개</strong>입니다. 그것을 필살기라고 부릅니다.</p>
@@ -833,11 +899,13 @@
     </div>
     <div class="highlight" style="margin-top:10px" data-i18n="s23hl">말하는 순서도 정해져 있습니다 — <strong>유사경험 → 성공경험 → 통찰력.</strong> 필살기 3~5개를 미리 만들어 두고, 회사와 문항에 따라 골라 쓰면 됩니다. 매번 새로 쓰지 않습니다.</div>
     <p class="src">출처: 면접왕 이형 <a href="https://www.youtube.com/@leebro_interview" target="_blank" rel="noopener">(YouTube 채널)</a> 프레임워크 · 정리 <a href="https://velog.io/@jeong_lululala/resume" target="_blank" rel="noopener">자기소개서 특강 정리(velog)</a> · <a href="https://namu.wiki/w/%EB%A9%B4%EC%A0%91%EC%99%95%20%EC%9D%B4%ED%98%95" target="_blank" rel="noopener">나무위키</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- STAR 분량 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.14">
     <p class="kicker" data-i18n="s24k">Structure</p>
     <h1 class="slide-title" data-i18n="s24t">STAR — 어디에 분량을 쓸 것인가</h1>
     <p class="lede" data-i18n="s24l">대부분의 학생은 상황 설명(S)에 절반을 씁니다. 평가받는 부분은 행동(A)과 결과(R)인데도 그렇습니다.</p>
@@ -859,12 +927,14 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://community.linkareer.com/employment_data/4464545" target="_blank" rel="noopener">링커리어 — STAR 기법 템플릿 및 작성 체크리스트</a> · <a href="https://community.linkareer.com/employment_data/3335177" target="_blank" rel="noopener">링커리어 — 자기소개서 글자수</a> · <a href="https://www.jobkorea.co.kr/goodjob/tip/view?News_No=11759" target="_blank" rel="noopener">잡코리아 — 자소서 글자수는 얼마나 채워야 하나</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 
   <!-- 글자수별 배분 (분리) -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.20">
     <p class="kicker" data-i18n="x3k">Word Limits</p>
     <h1 class="slide-title" data-i18n="x3t">글자 수 제한 안에서 STAR를 어떻게 넣나요</h1>
     <p class="lede" data-i18n="x3l">앞의 배분은 1,000자 기준입니다. 500자 문항에서는 그대로 쓸 수 없으니, 제한에 맞춰 비중을 바꿔야 합니다.</p>
@@ -886,10 +956,12 @@
       </div>
     </div>
     <p class="src">출처: <a href="https://community.linkareer.com/employment_data/3335177" target="_blank" rel="noopener">링커리어 — 자기소개서 글자수</a> · <a href="https://www.jobkorea.co.kr/goodjob/tip/view?News_No=11759" target="_blank" rel="noopener">잡코리아 — 자소서 글자수는 얼마나 채워야 하나</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
   <!-- 소제목 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.14">
     <p class="kicker" data-i18n="s25k">Subheadings</p>
     <h1 class="slide-title" data-i18n="s25t">소제목은 자소서의 썸네일입니다</h1>
     <p class="lede" data-i18n="s25l">10분밖에 쓰지 않는 사람이 가장 먼저 보는 것이 소제목입니다. 공식은 간단합니다 — <strong>어떻게(How) + 결과(Result)</strong>.</p>
@@ -906,11 +978,13 @@
       </div>
     </div>
     <p class="src">출처: <a href="https://www.haijob.co.kr/blog/5-ways-to-write-subheadings-in-your-resume-examples-and-precautions-tips-to-attract-the-attention-of-hiring-managers/" target="_blank" rel="noopener">HAIJOB — 자소서 소제목 작성법 5가지</a> · <a href="https://velog.io/@jeong_lululala/resume" target="_blank" rel="noopener">면접왕 이형 자소서 특강 정리</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 지원동기 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.62">
     <p class="kicker" data-i18n="s26k">Motivation</p>
     <h1 class="slide-title" data-i18n="s26t">지원동기 — "아무 회사에나 낸 것 같다"를 피하는 법</h1>
     <div class="content-body">
@@ -922,11 +996,13 @@
       </div>
     </div>
     <p class="src">출처: <a href="https://jasoseol.com/blog/post/3/" target="_blank" rel="noopener">자소설닷컴 — 지원동기 작성법</a> · <a href="https://www.haijob.co.kr/blog/5-of-self-introduction-support-synchronization-support-synchronization-5/" target="_blank" rel="noopener">HAIJOB — 지원동기 5가지 핵심 팁</a> · <a href="https://velog.io/@se_niii/%EB%A9%B4%EC%A0%91%EC%99%95-%EC%9D%B4%ED%98%95%EC%A0%95%EB%A6%AC-%EC%A7%80%EC%9B%90%EB%8F%99%EA%B8%B0-%EC%A7%88%EB%AC%B8%EC%97%90-%EB%8B%B5%EB%B3%80%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-%EC%A7%81%EB%AC%B4-%EC%A7%80%EC%9B%90%EB%8F%99%EA%B8%B0-%ED%9A%8C%EC%82%AC-%EC%A7%80%EC%9B%90%EB%8F%99%EA%B8%B0-%EC%A4%80%EB%B9%84%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95" target="_blank" rel="noopener">면접왕 이형 — 이기적 vs 이타적 지원동기</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 실패경험 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.02">
     <p class="kicker" data-i18n="s26kc11">Motivation</p>
     <h1 class="slide-title" data-i18n="s26tc11">지원동기 — "아무 회사에나 낸 것 같다"를 피하는 법 (계속)</h1>
     <div class="content-body">
@@ -938,10 +1014,12 @@
       <div class="highlight" data-i18n="s26hl"><strong>이기적 동기는 감추고, 이타적 동기로 번역하세요.</strong> "연봉이 높아서", "한국에 살고 싶어서"는 솔직하지만 면접에서는 감점 요인입니다. 같은 마음을 <strong>"제가 이 회사에 무엇을 줄 수 있는가"</strong>의 언어로 바꿔서 말해야 합니다.</div>
     </div>
     <p class="src">출처: <a href="https://jasoseol.com/blog/post/3/" target="_blank" rel="noopener">자소설닷컴 — 지원동기 작성법</a> · <a href="https://www.haijob.co.kr/blog/5-of-self-introduction-support-synchronization-support-synchronization-5/" target="_blank" rel="noopener">HAIJOB — 지원동기 5가지 핵심 팁</a> · <a href="https://velog.io/@se_niii/%EB%A9%B4%EC%A0%91%EC%99%95-%EC%9D%B4%ED%98%95%EC%A0%95%EB%A6%AC-%EC%A7%80%EC%9B%90%EB%8F%99%EA%B8%B0-%EC%A7%88%EB%AC%B8%EC%97%90-%EB%8B%B5%EB%B3%80%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-%EC%A7%81%EB%AC%B4-%EC%A7%80%EC%9B%90%EB%8F%99%EA%B8%B0-%ED%9A%8C%EC%82%AC-%EC%A7%80%EC%9B%90%EB%8F%99%EA%B8%B0-%EC%A4%80%EB%B9%84%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95" target="_blank" rel="noopener">면접왕 이형 — 이기적 vs 이타적 지원동기</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s27k">Failure Question</p>
     <h1 class="slide-title" data-i18n="s27t">실패 경험 — 가장 많이 망치는 문항</h1>
     <p class="lede" data-i18n="s27l">이 문항은 실패를 묻는 것이 아니라 <strong>자기 객관화 능력</strong>을 봅니다. 3단 구조로 쓰면 안전합니다.</p>
@@ -958,11 +1036,13 @@
       <p class="note" data-i18n="s27n">참고로 "성격의 장단점" 문항도 같은 원리입니다. 단점은 <strong>"이미 극복해 본 단점"</strong>으로 답해야 자기 객관화가 증명됩니다. 극복 노력이 없는 단점은 그냥 단점으로 남습니다.</p>
     </div>
     <p class="src">출처: <a href="https://www.haijob.co.kr/blog/write-a-cover-letter-failure-experience-3-key-points-and-examples-write-this/" target="_blank" rel="noopener">HAIJOB — 자소서 실패경험 핵심 3가지</a> · <a href="https://news.incruit.com/news/newsview.asp?newsno=436476" target="_blank" rel="noopener">인크루트 — 갈등해결 예시</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 이력서 작성 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="n3k">Résumé</p>
     <h1 class="slide-title" data-i18n="n3t">이력서 — 외국인 지원자만 신경 써야 하는 칸들</h1>
     <p class="lede" data-i18n="n3l">자소서만큼 중요한데 아무도 알려주지 않는 부분입니다. 아래 항목에서 실수가 나면 <strong>내용을 읽기도 전에</strong> 검토가 멈춥니다.</p>
@@ -980,19 +1060,23 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://seoulstart.com/ko/guides/korean-resume" target="_blank" rel="noopener">Seoulstart — 한국 기업이 원하는 이력서 작성법(2026)</a> · <a href="https://community.linkareer.com/employment_data/5041783" target="_blank" rel="noopener">링커리어 — 이력서 사진 규격</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 
   <!-- ===== PART 3.5 : 대기업 지원 전략 & 공고 찾기 ===== -->
   <section class="slide divider">
+    <div class="body-wrap" style="zoom:1.06">
     <p class="plab" data-i18n="g0p">PART 4</p>
     <h1 data-i18n="g0t">대기업 지원 전략, 그리고 외국인 채용 공고를 찾는 법</h1>
     <p class="lede" data-i18n="g0l">이번 파트는 신청자 한 분이 직접 요청하신 주제입니다. 대기업 공채는 지금까지 배운 것과 <strong>규칙이 다른 별개의 게임</strong>이고, 무엇보다 <strong>공고를 찾는 방법 자체</strong>를 알아야 시작할 수 있습니다.</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="g1k">Reality Of 공채</p>
     <h1 class="slide-title" data-i18n="g1t">먼저 잘못된 전제를 하나 깨겠습니다</h1>
     <p class="lede" data-i18n="g1l">"대기업 공채 시즌을 기다렸다가 지원한다" — 이 전략은 이제 <strong>삼성에만</strong> 유효합니다.</p>
@@ -1009,10 +1093,12 @@
       <div class="highlight" data-i18n="g1hl">그래서 앞에서 말씀드린 원칙이 대기업에도 그대로 적용됩니다 — <strong>경험정리표를 미리 만들어 두고, 공고가 뜨면 3일 안에 지원할 수 있는 상태</strong>를 유지하는 것. 나머지 세 그룹은 기다릴 시즌 자체가 없습니다.</div>
     </div>
     <p class="src">출처: <a href="https://www.bloter.net/news/articleView.html?idxno=672911" target="_blank" rel="noopener">블로터 — 4대 그룹 중 유일, 삼성 하반기 공채</a> · <a href="https://www.samsungcareers.com/guide/process" target="_blank" rel="noopener">삼성 채용 프로세스</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.16">
     <p class="kicker" data-i18n="g2k">Process</p>
     <h1 class="slide-title" data-i18n="g2t">그룹마다 전형 순서와 시험 이름이 다릅니다</h1>
     <div class="content-body">
@@ -1029,10 +1115,12 @@
       <p class="note" data-i18n="g2n"><strong>삼성 서류는 자소서 문장력보다 전공 이수 이력을 먼저 봅니다.</strong> 삼성의 서류 단계 이름이 "직무적합성 평가"인데, 공식 설명에 따르면 전공과목 이수 내역과 직무 관련 경험, 에세이로 평가하며 <strong>R&amp;D·기술·SW 직군은 전공 이수 과목의 깊이와 성적을 우선 평가</strong>합니다. 앞에서 "프로젝트가 있는 과목을 들으라"고 말씀드린 이유가 여기서도 나옵니다.</p>
     </div>
     <p class="src">출처: <a href="https://www.samsungcareers.com/guide/process" target="_blank" rel="noopener">삼성 채용 프로세스</a> · <a href="https://careers.sktelecom.com/skRecruitStory/process" target="_blank" rel="noopener">SK 채용 절차</a> · <a href="https://www.lotte.co.kr/careers/personnelSystem.do" target="_blank" rel="noopener">롯데 채용전형</a> · <a href="https://community.linkareer.com/employment_data/4133675" target="_blank" rel="noopener">링커리어 — CJ 인적성</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="g3k">Doors Made For You</p>
     <h1 class="slide-title" data-i18n="g3t">외국인 유학생만 지원할 수 있는 전형이 실제로 있습니다</h1>
     <p class="lede" data-i18n="g3l">일반 공채는 한국인 전체와 경쟁하지만, 아래 전형들은 <strong>여러분이 외국인이라는 것을 전제로 설계</strong>되어 있습니다. 경쟁 상대의 모수가 다릅니다.</p>
@@ -1058,10 +1146,12 @@
       <p class="note" style="color:var(--bad)" data-i18n="g3n">⚠️ 모집 시기와 요건은 매년 바뀝니다. 위 내용은 조사 시점 기준이며, <strong>반드시 각 사 채용 사이트와 학교 국제처 공지에서 최신 공고를 확인</strong>하세요.</p>
     </div>
     <p class="src">출처: <a href="https://www.hankyung.com/article/202502244534i" target="_blank" rel="noopener">한국경제 — 삼성, 외국인 유학생 공채 문턱 낮춘다</a> · <a href="https://www.skcareers.com/Recruit/Detail/R260522" target="_blank" rel="noopener">SK Careers — Global Internship 공고</a> · <a href="https://internationalcenter.inha.ac.kr/internationalcenter/9905/subview.do" target="_blank" rel="noopener">현대차 유학생 인턴 공고(대학 국제처 게시)</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.20">
     <p class="kicker" data-i18n="g4k">Hidden Requirement</p>
     <h1 class="slide-title" data-i18n="g4t">지원 자격에서 막히는 함정 — 영어 말하기 시험</h1>
     <div class="content-body">
@@ -1081,11 +1171,13 @@
       <p class="note" data-i18n="g4n3">덧붙이면, 이것은 여러분에게 유리한 지점이기도 합니다. 베트남어·한국어·영어를 함께 하실 수 있다면 <strong>한국인 지원자가 갖기 어려운 조합</strong>입니다. 다만 그 조합을 <strong>증명할 성적표</strong>가 있어야 인정받습니다.</p>
     </div>
     <p class="src">출처: <a href="https://www.toeicstory.co.kr/2558" target="_blank" rel="noopener">한국토익위원회 — 삼성 공채 토익스피킹 안내</a> · <a href="https://www.fnnews.com/news/202609081035580955" target="_blank" rel="noopener">파이낸셜뉴스 — 삼성 공채 맞춰 토익스피킹 시험 편성</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.14">
     <p class="kicker" data-i18n="g5k">Demand vs Supply</p>
     <h1 class="slide-title" data-i18n="g5t">기업이 원하는 자리와, 여러분이 몰리는 자리가 다릅니다</h1>
     <div class="content-body">
@@ -1113,10 +1205,12 @@
       <p class="note" data-i18n="g5n"><strong>가장 흔한 실수는 자신을 "통역할 수 있는 사람"으로 포지셔닝하는 것</strong>입니다. 기업이 기대하는 것은 통역사가 아니라 <strong>해당 시장을 아는 사업 담당자</strong>입니다. "베트남어를 합니다"가 아니라 <strong>"베트남 시장의 고객을 이해하고 그 시장에서 매출을 만들 수 있습니다"</strong>로 말해야 합니다.</p>
     </div>
     <p class="src">출처: <a href="https://www.metroseoul.co.kr/article/20241022500160" target="_blank" rel="noopener">메트로서울 — 잡코리아 "기업, 외국인 채용 시 영업 직무 선호"</a> (2024.10, 표본 미공개) · <a href="https://kowork.kr/blog/survey" target="_blank" rel="noopener">KOWORK — 2025 외국인 채용 설문(인사담당자 100명)</a> · <a href="https://univ.vijob.net/ko/articles/1308" target="_blank" rel="noopener">VIJOB — 한국 기업의 채용 기준</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="g6k">GSAT</p>
     <h1 class="slide-title" data-i18n="g6t">인적성검사 — 유학생에게 가장 불리한 관문</h1>
     <div class="content-body">
@@ -1135,10 +1229,12 @@
       <p class="note" data-i18n="g6n">참고로 CJ의 인성검사(CJAT)는 <strong>30분에 250문항</strong>입니다. 정답이 없는 검사이므로 속도보다 <strong>일관성</strong>이 핵심입니다 — 앞서 AI 역량검사에서 말씀드린 원칙과 같습니다.</p>
     </div>
     <p class="src">출처: <a href="https://jasoseol.com/blog/post/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-gsat-%EC%9D%B8%EC%A0%81%EC%84%B1%EA%B2%80%EC%82%AC-%EC%9D%BC%EC%A0%95-%EC%9C%A0%ED%98%95-%EB%82%9C%EC%9D%B4%EB%8F%84-%ED%9B%84%EA%B8%B0/" target="_blank" rel="noopener">자소설닷컴 — GSAT 유형·난이도 총정리</a> · <a href="http://www.jobnjoy.com/portal/job/hotnews_view.jsp?depth1=1&amp;depth2=1&amp;depth3=1&amp;nidx=239499" target="_blank" rel="noopener">잡앤조이 — CJ CAT·CJAT</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.16">
     <p class="kicker" data-i18n="g7k">One-Day Interview</p>
     <h1 class="slide-title" data-i18n="g7t">대기업 면접은 하루에 2~3개를 연속으로 봅니다</h1>
     <div class="content-body">
@@ -1154,11 +1250,13 @@
       <p class="note" data-i18n="g7n">형식도 알아두세요. 보통 <strong>지원자 1명 대 면접관 2~3명</strong>이고, 롯데처럼 실무면접과 임원면접을 하루에 통합해 진행하는 곳도 있습니다.</p>
     </div>
     <p class="src">출처: <a href="https://community.linkareer.com/employment_data/4337630" target="_blank" rel="noopener">링커리어 — 삼성 면접 질문 리스트</a> · <a href="https://www.jobplanet.co.kr/contents/news-4663" target="_blank" rel="noopener">잡플래닛 — 삼성 면접 대비법</a> · <a href="https://www.lotte.co.kr/careers/personnelSystem.do" target="_blank" rel="noopener">롯데 채용전형</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.22">
     <p class="kicker" data-i18n="h1k">Finding Postings · 1</p>
     <h1 class="slide-title" data-i18n="h1t">공고 찾기 ① — 일반 채용사이트에는 외국인 필터가 없습니다</h1>
     <p class="lede" data-i18n="h1l">사람인·잡코리아에는 "외국인 지원 가능" 필터가 아예 없습니다. 그래서 <strong>검색어 자체를 바꿔야</strong> 합니다.</p>
@@ -1174,10 +1272,12 @@
       <div class="highlight" data-i18n="h1hl"><strong>다만 이 검색 결과에는 제조·현장직(E-9 고용허가제) 공고가 많이 섞여 있습니다.</strong> 여러분이 목표로 하는 사무직·전문직(E-7)과는 다른 트랙입니다. 반드시 <strong>직무 필터(마케팅·해외영업·기획 등)를 함께 걸어서</strong> 걸러내세요.</div>
     </div>
     <p class="src">출처: <a href="https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%99%B8%EA%B5%AD%EC%9D%B8+%EC%B1%84%EC%9A%A9" target="_blank" rel="noopener">사람인 "외국인 채용" 검색</a> · <a href="https://www.jobkorea.co.kr/Search/?stext=%EC%99%B8%EA%B5%AD%EC%9D%B8+%EC%B1%84%EC%9A%A9" target="_blank" rel="noopener">잡코리아 검색</a> · <a href="https://www.catch.co.kr/NCS/RecruitSearch?theme=107" target="_blank" rel="noopener">캐치 외국인 채용공고</a> · 건수는 조회 시점에 따라 달라집니다</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.14">
     <p class="kicker" data-i18n="h2k">Finding Postings · 2</p>
     <h1 class="slide-title" data-i18n="h2t">공고 찾기 ② — 비자로 걸러주는 사이트를 쓰세요</h1>
     <p class="lede" data-i18n="h2l">3,000건을 뒤지는 것보다, <strong>"E-7 스폰서를 해주는 회사"만 골라 50건을 보는 편</strong>이 훨씬 빠릅니다.</p>
@@ -1194,10 +1294,12 @@
       <p class="note" data-i18n="h2n">※ 외국인 채용 플랫폼은 생겼다 없어지기를 반복합니다. 잡코리아가 운영하던 <strong>KLiK은 서비스가 종료</strong>되었습니다. 접속이 안 되거나 공고가 없는 사이트는 미련 없이 넘어가세요.</p>
     </div>
     <p class="src">출처: <a href="https://komate.saramin.co.kr/" target="_blank" rel="noopener">KoMate</a> · <a href="https://kowork.kr/en" target="_blank" rel="noopener">KOWORK</a> · <a href="https://workon.net/en/" target="_blank" rel="noopener">WorkOn</a> · <a href="https://www.jobploy.kr/en/recruit" target="_blank" rel="noopener">JobPloy</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.14">
     <p class="kicker" data-i18n="h3k">Finding Postings · 3</p>
     <h1 class="slide-title" data-i18n="h3t">공고 찾기 ③ — 경쟁자가 가장 적은 곳은 학교와 지역입니다</h1>
     <div class="content-body">
@@ -1221,10 +1323,12 @@
       <p class="note" style="color:var(--bad)" data-i18n="h3n">⚠️ 혼동 주의 — <strong>Work24(고용24)의 외국인 채용 지원 기능과 EPS(고용허가제)는 E-9 단순기능 인력 대상</strong>입니다. 대졸 유학생의 E-7 트랙과는 다른 제도이니, 여기서 시간을 쓰지 마세요.</p>
     </div>
     <p class="src">출처: <a href="https://k-work.or.kr/main/main.do" target="_blank" rel="noopener">K-Work</a> · <a href="https://www.kotra.or.kr/ck_kor/subList/40000001322" target="_blank" rel="noopener">KOTRA 해외인재유치센터</a> · <a href="https://job.gg.go.kr/" target="_blank" rel="noopener">경기도 잡아바</a> · <a href="https://job.ajou.ac.kr/" target="_blank" rel="noopener">아주대 대학일자리플러스센터</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="h4k">Reading The Posting</p>
     <h1 class="slide-title" data-i18n="h4t">공고 찾기 ④ — 이 회사가 나를 뽑을 수 있는지 판별하는 법</h1>
     <div class="content-body">
@@ -1241,10 +1345,12 @@
       <p class="note" data-i18n="h4n">확인 도구: <a href="https://www.hikorea.go.kr" target="_blank" rel="noopener">하이코리아</a>의 <strong>'외국인 취업 및 고용가능 여부 확인'</strong> 서비스, 그리고 <strong>외국인종합안내센터 1345</strong>에서 취업 가능 범위를 공식으로 확인할 수 있습니다.</p>
     </div>
     <p class="src">출처: <a href="https://kowork.kr/blog/%EA%B5%AD%EB%AF%BC%EA%B3%A0%EC%9A%A9%EB%B3%B4%ED%98%B8%EC%8B%AC%EC%82%AC%EA%B8%B0%EC%A4%80" target="_blank" rel="noopener">KOWORK — E-7과 국민고용보호 심사기준</a> · <a href="https://www.jobploy.kr/ko/content/foreigner-employment-eligibility-check" target="_blank" rel="noopener">외국인 취업·고용가능 여부 조회 안내</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.22">
     <p class="kicker" data-i18n="h5k">Just Ask</p>
     <h1 class="slide-title" data-i18n="h5t">공고에 아무 말이 없다면 — 지원 전에 물어보세요</h1>
     <p class="lede" data-i18n="h5l">공고에 외국인 관련 언급이 없다고 해서 "안 된다"는 뜻이 아닙니다. <strong>대부분은 생각을 안 해본 것</strong>입니다.</p>
@@ -1252,10 +1358,12 @@
       <div class="say"><span class="who" data-i18n="h5w">그대로 복사해서 쓰는 문의 메일</span><span data-i18n="h5e"><strong>제목:</strong> [채용문의] ○○ 직무 지원 관련 — 외국인 지원 가능 여부 문의<br><br>안녕하십니까. ○○ 직무 채용공고를 보고 지원을 준비 중인 △△△입니다.<br>저는 현재 <strong>D-2(유학) 체류자격</strong>으로 국내 ○○대학교 ○○학과를 졸업(예정)했으며, 입사 시 <strong>E-7 자격변경</strong>이 필요합니다.<br>다름이 아니라 <strong>외국인 지원자도 지원 가능한 공고인지</strong>, 그리고 <strong>비자 지원(고용사유서 작성 등)이 가능한지</strong> 확인하고 싶어 문의드립니다.<br>필요한 <strong>서류 목록과 절차는 제가 정리해서 함께 보내드릴 수 있습니다.</strong><br>확인해 주시면 지원 준비에 큰 도움이 되겠습니다. 감사합니다.</span></div>
       <div class="highlight" data-i18n="h5hl">계산해 보세요. <strong>지원서를 쓰는 데 3일, 이 메일을 쓰는 데 5분입니다.</strong> 먼저 물어보고 답을 받은 뒤에 쓰는 것이 훨씬 남는 장사입니다. 그리고 이 메일 자체가 <strong>"절차를 아는 지원자"</strong>라는 인상을 남깁니다 — 앞에서 배운 대로, 회사가 느끼는 불확실성을 여러분이 줄여주는 것입니다.</div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="h6k">Portfolio</p>
     <h1 class="slide-title" data-i18n="h6t">그래서 어디에 지원해야 할까요</h1>
     <div class="content-body">
@@ -1270,21 +1378,25 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://seoulstart.com/ko/guides/companies-hiring-foreigners-korea" target="_blank" rel="noopener">Seoulstart — 한국에서 외국인을 채용하는 기업 가이드(2026)</a> · <a href="https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EB%AA%A8%EB%93%A0%EC%A7%81%EB%AC%B4/%EC%99%B8%EA%B5%AD%EC%9D%B8_%EC%9C%A0%ED%95%99%EC%83%9D%20%EC%B7%A8%EC%97%85%20%EC%A4%80%EB%B9%84%20%EB%B0%A9%ED%96%A5%EC%9D%B4%20%EA%B3%A0%EB%AF%BC%EC%9E%85%EB%8B%88%EB%8B%A4-625640" target="_blank" rel="noopener">코멘토 — 외국인 유학생 취업 준비 방향</a> · 배분 제언은 리서치 종합으로 구성</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- PART4 divider -->
       <section class="slide">
+    <div class="body-wrap" style="zoom:1.64">
     <p class="kicker" data-i18n="h6kz1">Portfolio</p>
     <h1 class="slide-title" data-i18n="h6tz1">그래서 어디에 지원해야 할까요 (계속)</h1>
     <div class="content-body">
       <p class="note" data-i18n="h6n"><strong>한 곳에 전부 걸지 마세요.</strong> 세 트랙에 나눠 지원하면, 어느 하나가 막혀도 다른 길이 남습니다. 그리고 만약 이번에 한국 취업이 잘 풀리지 않더라도 — <strong>본국에서 경력을 쌓은 뒤 경력직으로 다시 한국에 도전하는 길</strong>도 있습니다. 어디서 시작하든 <strong>직무 전문성을 쌓는 것이 최우선</strong>입니다.</p>
     </div>
     <p class="src">출처: <a href="https://seoulstart.com/ko/guides/companies-hiring-foreigners-korea" target="_blank" rel="noopener">Seoulstart — 한국에서 외국인을 채용하는 기업 가이드(2026)</a> · <a href="https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EB%AA%A8%EB%93%A0%EC%A7%81%EB%AC%B4/%EC%99%B8%EA%B5%AD%EC%9D%B8_%EC%9C%A0%ED%95%99%EC%83%9D%20%EC%B7%A8%EC%97%85%20%EC%A4%80%EB%B9%84%20%EB%B0%A9%ED%96%A5%EC%9D%B4%20%EA%B3%A0%EB%AF%BC%EC%9E%85%EB%8B%88%EB%8B%A4-625640" target="_blank" rel="noopener">코멘토 — 외국인 유학생 취업 준비 방향</a> · 배분 제언은 리서치 종합으로 구성</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.66">
     <p class="kicker" data-i18n="n3kc10">Résumé</p>
     <h1 class="slide-title" data-i18n="n3tc10">이력서 — 외국인 지원자만 신경 써야 하는 칸들 (계속)</h1>
     <div class="content-body">
@@ -1292,18 +1404,22 @@
       <p class="note" data-i18n="n3n">참고로 공공기관·공기업은 대부분 한국 국적자나 영주권자로 지원이 제한되어 있어, 유학생에게는 <strong>민간기업이 현실적인 타깃</strong>입니다.</p>
     </div>
     <p class="src">출처: <a href="https://seoulstart.com/ko/guides/korean-resume" target="_blank" rel="noopener">Seoulstart — 한국 기업이 원하는 이력서 작성법(2026)</a> · <a href="https://community.linkareer.com/employment_data/5041783" target="_blank" rel="noopener">링커리어 — 이력서 사진 규격</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide divider">
+    <div class="body-wrap" style="zoom:1.06">
     <p class="plab" data-i18n="s28p">PART 5</p>
     <h1 data-i18n="s28t">회사를 조사하는 법, 그리고 AI를 쓰는 법</h1>
     <p class="lede" data-i18n="s28l">"회사에 대한 관심·이해 부족"은 나쁜 자소서 4위(31.7%)였습니다. 반대로 말하면, 조사만 제대로 해도 상위권에 들어갑니다. 그리고 이 조사는 AI를 쓰면 훨씬 빨라집니다.</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 기업 정보 소스 맵 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.16">
     <p class="kicker" data-i18n="s29k">Where to Look</p>
     <h1 class="slide-title" data-i18n="s29t">기업 정보는 어디서 찾나요</h1>
     <div class="content-body">
@@ -1317,12 +1433,14 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://dart.fss.or.kr/" target="_blank" rel="noopener">DART</a> · <a href="https://www.catch.co.kr/" target="_blank" rel="noopener">캐치</a> · <a href="https://markets.hankyung.com/consensus" target="_blank" rel="noopener">한경 컨센서스</a> · <a href="https://seoulstart.com/ko/guides/best-job-sites-korea" target="_blank" rel="noopener">Seoulstart — 외국인 구직 사이트 비교</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 
   <!-- 공고 찾는 채널 (분리) -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.48">
     <p class="kicker" data-i18n="s29kcx">Where to Look</p>
     <h1 class="slide-title" data-i18n="s29tcx">기업 정보는 어디서 찾나요 (계속)</h1>
     <div class="content-body">
@@ -1336,11 +1454,13 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://dart.fss.or.kr/" target="_blank" rel="noopener">DART</a> · <a href="https://www.catch.co.kr/" target="_blank" rel="noopener">캐치</a> · <a href="https://markets.hankyung.com/consensus" target="_blank" rel="noopener">한경 컨센서스</a> · <a href="https://seoulstart.com/ko/guides/best-job-sites-korea" target="_blank" rel="noopener">Seoulstart — 외국인 구직 사이트 비교</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- DART 실습 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.64">
     <p class="kicker" data-i18n="s30k">Hands-on · DART</p>
     <h1 class="slide-title" data-i18n="s30t">사업보고서 5분 만에 꺼내는 법</h1>
     <div class="content-body">
@@ -1353,11 +1473,13 @@
       </div>
     </div>
     <p class="src">출처: <a href="https://dart.fss.or.kr/info/main.do?menu=210" target="_blank" rel="noopener">금융감독원 기업공시 길라잡이</a> · <a href="https://brunch.co.kr/@lshkorea/146" target="_blank" rel="noopener">DART 사용법</a> · <a href="https://www.jobkorea.co.kr/starter/companyreport/view?Inside_No=15745" target="_blank" rel="noopener">잡코리아 — 금융감독원 자료로 기업분석하기</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- AI 워크플로우 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.24">
     <p class="kicker" data-i18n="s30kq1">Hands-on · DART</p>
     <h1 class="slide-title" data-i18n="s30tq1">사업보고서 5분 만에 꺼내는 법 (계속)</h1>
     <div class="content-body">
@@ -1373,10 +1495,12 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://dart.fss.or.kr/info/main.do?menu=210" target="_blank" rel="noopener">금융감독원 기업공시 길라잡이</a> · <a href="https://brunch.co.kr/@lshkorea/146" target="_blank" rel="noopener">DART 사용법</a> · <a href="https://www.jobkorea.co.kr/starter/companyreport/view?Inside_No=15745" target="_blank" rel="noopener">잡코리아 — 금융감독원 자료로 기업분석하기</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s31k">AI Workflow</p>
     <h1 class="slide-title" data-i18n="s31t">AI로 "이 회사 전용" 면접 준비 자료 만들기</h1>
     <p class="lede" data-i18n="s31l">핵심은 AI에게 <strong>일반적인 조언을 묻는 것이 아니라, 내가 모은 자료를 주고 그 안에서만 답하게 하는 것</strong>입니다. 그래야 지어낸 정보가 섞이지 않습니다.</p>
@@ -1394,11 +1518,13 @@
       <p class="note" data-i18n="s31n">AI 도구는 종류가 많지만 <strong>면접 준비에는 위의 두 가지면 충분합니다.</strong> (Google Antigravity처럼 개발자가 코드를 작성하도록 돕는 도구는 이 용도에 맞지 않습니다.)</p>
     </div>
     <p class="src">출처: <a href="https://notebooklm.google" target="_blank" rel="noopener">NotebookLM</a> · <a href="https://www.gpters.org/nocode/post/job-analysis-self-introduction-KUV5wtUIAxsTfxB" target="_blank" rel="noopener">GPTers — NotebookLM으로 채용공고 분석부터 자기소개서까지</a> · <a href="https://antigravity.google/" target="_blank" rel="noopener">Google Antigravity 공식 소개</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 프롬프트 1 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.50">
     <p class="kicker" data-i18n="s32k">Copy &amp; Paste</p>
     <h1 class="slide-title" data-i18n="s32t">그대로 복사해서 쓰는 프롬프트 ①</h1>
     <div class="content-body">
@@ -1416,11 +1542,13 @@
 6. 각 항목마다 사업보고서의 어느 섹션에서 나왔는지 출처 표시</div>
       </div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 프롬프트 2 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.34">
     <p class="kicker" data-i18n="s32kpz2">Copy &amp; Paste</p>
     <h1 class="slide-title" data-i18n="s32tpz2">그대로 복사해서 쓰는 프롬프트 ① (계속)</h1>
     <div class="content-body">
@@ -1438,10 +1566,12 @@
 - 어려운 질문일수록 뒤쪽에 배치해줘</div>
       </div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.20">
     <p class="kicker" data-i18n="s33k">Copy &amp; Paste</p>
     <h1 class="slide-title" data-i18n="s33t">그대로 복사해서 쓰는 프롬프트 ②</h1>
     <div class="content-body">
@@ -1461,11 +1591,13 @@
       이유와 함께 알려줘. 고쳐 쓰는 것은 내가 할게.</div>
       </div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- AI 주의점 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.28">
     <p class="kicker" data-i18n="s33kpz1">Copy &amp; Paste</p>
     <h1 class="slide-title" data-i18n="s33tpz1">그대로 복사해서 쓰는 프롬프트 ② (계속)</h1>
     <div class="content-body">
@@ -1483,10 +1615,12 @@
 시작한다고 하면 첫 질문부터 해줘.</div>
       </div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s34k">Warning</p>
     <h1 class="slide-title" data-i18n="s34t">AI가 써준 자소서를 그대로 내면 안 되는 이유</h1>
     <div class="content-body">
@@ -1499,11 +1633,13 @@
       <div class="highlight" data-i18n="s34hl"><strong>진짜 문제는 적발이 아닙니다.</strong> 많은 기업이 탐지조차 하지 않습니다. 문제는 그다음입니다 — <strong>자소서에 쓴 모든 경험은 면접에서 꼬리질문의 대상이 됩니다.</strong> AI가 만든 문장은 내가 실제로 겪은 일이 아니기 때문에, "그때 구체적으로 어떻게 하셨나요?"라는 두 번째 질문에서 반드시 무너집니다. 그리고 그 순간 나머지 답변의 신뢰도까지 함께 사라집니다.</div>
     </div>
     <p class="src">출처: 고용노동부·한국고용정보원 「2023년 하반기 기업 채용동향조사」(매출 상위 500대 기업 중 315개사) · 보도 <a href="https://www.kmib.co.kr/article/view.asp?arcid=0019925441" target="_blank" rel="noopener">국민일보</a> · <a href="https://www.khan.co.kr/article/202403241353001" target="_blank" rel="noopener">경향신문</a> / 탐지 한계는 <a href="https://www.saramin.co.kr/zf_user/hr-magazine/view?hr_idx=1084" target="_blank" rel="noopener">사람인 HR매거진</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- PART5 divider -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.22">
     <p class="kicker" data-i18n="s34kc9">Warning</p>
     <h1 class="slide-title" data-i18n="s34tc9">AI가 써준 자소서를 그대로 내면 안 되는 이유 (계속)</h1>
     <div class="content-body">
@@ -1515,18 +1651,22 @@
       <p class="note" data-i18n="s34vi"><strong>"베트남어로 먼저 쓰고 번역해도 되나요?" — 됩니다. 오히려 권합니다.</strong> 생각은 모국어로 해야 내용이 깊어집니다. 다만 순서를 지키세요 — ① 베트남어로 내용을 완성하고 ② 한국어로 옮긴 뒤 ③ AI에게 <strong>"어색한 표현만 고쳐 달라"</strong>고 요청하고 ④ <strong>반드시 소리 내어 읽어</strong> 내가 설명할 수 있는 문장인지 확인하세요. 번역기가 만든 문장에는 뜻은 맞지만 자소서에서는 쓰지 않는 표현이 섞이기 때문에, 마지막 확인은 꼭 본인이 해야 합니다.</p>
     </div>
     <p class="src">출처: 고용노동부·한국고용정보원 「2023년 하반기 기업 채용동향조사」(매출 상위 500대 기업 중 315개사) · 보도 <a href="https://www.kmib.co.kr/article/view.asp?arcid=0019925441" target="_blank" rel="noopener">국민일보</a> · <a href="https://www.khan.co.kr/article/202403241353001" target="_blank" rel="noopener">경향신문</a> / 탐지 한계는 <a href="https://www.saramin.co.kr/zf_user/hr-magazine/view?hr_idx=1084" target="_blank" rel="noopener">사람인 HR매거진</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide divider">
+    <div class="body-wrap" style="zoom:1.06">
     <p class="plab" data-i18n="s35p">PART 6</p>
     <h1 data-i18n="s35t">면접 — 준비한 사람만 편안해지는 자리</h1>
     <p class="lede" data-i18n="s35l">면접에서 가장 많이 감점되는 항목은 한국어 실력이 아닙니다. 무엇인지는 잠시 후 데이터로 보여드리겠습니다 — 미리 말씀드리면, <strong>셋 다 준비만으로 100% 막을 수 있는 것들</strong>입니다.</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 면접 유형 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s36k">Interview Types</p>
     <h1 class="slide-title" data-i18n="s36t">면접 종류마다 보는 것이 다릅니다</h1>
     <div class="content-body">
@@ -1543,21 +1683,25 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://www.haijob.co.kr/blog/disclosure-of-the-differences-in-executive-interviews-and-interview-preparation-strategies-for-each-type-of-interview/" target="_blank" rel="noopener">HAIJOB — 실무면접 vs 임원면접</a> · <a href="https://community.linkareer.com/employment_data/4222898" target="_blank" rel="noopener">링커리어 — PT 면접 준비법</a> · <a href="https://community.linkareer.com/employment_data/3104667" target="_blank" rel="noopener">링커리어 — 면접 예상질문 총정리</a> · <a href="https://www.newsnjob.com/news/articleView.html?idxno=17943" target="_blank" rel="noopener">뉴스앤잡 — 인적성검사의 핵심은 정답률</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 1분 자기소개 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.66">
     <p class="kicker" data-i18n="s36kc8">Interview Types</p>
     <h1 class="slide-title" data-i18n="s36tc8">면접 종류마다 보는 것이 다릅니다 (계속)</h1>
     <div class="content-body">
       <div class="highlight cool" data-i18n="s36hl"><strong>2025~2026년 면접 흐름:</strong> "무엇을 했는지"보다 <strong>"왜 그렇게 판단했는지"</strong>를 확인하는 방향으로 바뀌고 있습니다. "다른 방법도 있었을 텐데 왜 그 방법을 택했나요?"라는 꼬리질문이 늘고 있으니, 경험마다 <strong>선택의 이유</strong>를 준비해두세요.</div>
     </div>
     <p class="src">출처: <a href="https://www.haijob.co.kr/blog/disclosure-of-the-differences-in-executive-interviews-and-interview-preparation-strategies-for-each-type-of-interview/" target="_blank" rel="noopener">HAIJOB — 실무면접 vs 임원면접</a> · <a href="https://community.linkareer.com/employment_data/4222898" target="_blank" rel="noopener">링커리어 — PT 면접 준비법</a> · <a href="https://community.linkareer.com/employment_data/3104667" target="_blank" rel="noopener">링커리어 — 면접 예상질문 총정리</a> · <a href="https://www.newsnjob.com/news/articleView.html?idxno=17943" target="_blank" rel="noopener">뉴스앤잡 — 인적성검사의 핵심은 정답률</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.06">
     <p class="kicker" data-i18n="s37k">Self-Introduction</p>
     <h1 class="slide-title" data-i18n="s37t">1분 자기소개는 "내 면접의 목차"입니다</h1>
     <p class="lede" data-i18n="s37l">여기서 던진 이야기를 면접관이 이어서 질문합니다. 즉, <strong>내가 준비한 것을 질문하게 만드는 도구</strong>입니다. 한국어가 불안할수록 이 장치가 중요합니다.</p>
@@ -1574,11 +1718,13 @@
       <p class="note" data-i18n="s37n"><strong>유학생을 위한 조언:</strong> 자기소개만큼은 <strong>완전히 외워도 됩니다.</strong> 유일하게 100% 예측 가능한 질문이기 때문입니다. 다만 나머지 답변까지 외우면 안 됩니다 — 그 이유는 다음 장에서 설명드립니다.</p>
     </div>
     <p class="src">출처: <a href="https://community.linkareer.com/employment_data/4238784" target="_blank" rel="noopener">링커리어 — 면접 1분 자기소개 작성법</a> · <a href="https://velog.io/@se_niii/%EB%A9%B4%EC%A0%91%EC%99%95-%EC%9D%B4%ED%98%95%EC%A0%95%EB%A6%AC-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%A4%80%EB%B9%84-%EC%95%88-%ED%95%98%EB%A9%B4-%EB%AC%B4%EC%A1%B0%EA%B1%B4-%EB%B6%88%ED%95%A9%EA%B2%A9%ED%95%98%EB%8A%94-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8-3%EA%B0%9C" target="_blank" rel="noopener">면접왕 이형 — 1분 자기소개는 내 면접의 목차</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 60~90초 답변 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s38k">Answer Design</p>
     <h1 class="slide-title" data-i18n="s38t">답변 60~90초 — 어디에 시간을 쓸 것인가</h1>
     <div class="content-body">
@@ -1603,11 +1749,13 @@
       <div class="highlight" data-i18n="s38hl"><strong>유학생을 위한 핵심 조언입니다.</strong> 한국어가 불안하면 문장 전체를 통째로 외우고 싶어집니다. 하지만 외운 문장은 티가 나고, 꼬리질문 한 번에 무너집니다. 대신 이렇게 하세요 — <strong>경험마다 키워드 3개와 숫자 1개만 외우고, 문장은 그 자리에서 만드는 연습</strong>을 하세요. 문법이 조금 틀려도 이쪽이 훨씬 높은 평가를 받습니다.</div>
     </div>
     <p class="src">출처: <a href="https://www.aceround.app/ko/blog/star-method-interview-ai/" target="_blank" rel="noopener">STAR 기법 면접 답변 예시와 60초 구조</a> · <a href="https://community.linkareer.com/employment_data/3104667" target="_blank" rel="noopener">링커리어 — 면접 예상질문 &amp; STAR 답변법</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 꼬리질문 3유형 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s39k">Reading the Signals</p>
     <h1 class="slide-title" data-i18n="s39t">꼬리질문은 신호입니다 — 3가지 유형을 알아두세요</h1>
     <p class="lede" data-i18n="s39l">면접관이 다시 물으면 유학생은 대개 "내 한국어가 안 통했나?"라고 위축됩니다. 대부분은 그런 뜻이 아닙니다.</p>
@@ -1620,11 +1768,13 @@
       <div class="highlight" data-i18n="s39hl">기억하세요 — 면접에서 감점 3위가 <strong>"본인 지원서 내용을 모름"(46.3%)</strong>입니다. 면접 전날 밤에 반드시 <strong>내가 제출한 자소서를 다시 읽으세요.</strong> 여러 회사에 지원했다면 어느 회사에 무엇을 썼는지 헷갈리기 쉽습니다.</div>
     </div>
     <p class="src">출처: <a href="https://velog.io/@se_niii/%EB%A9%B4%EC%A0%91%EC%99%95-%EC%9D%B4%ED%98%95%EC%A0%95%EB%A6%AC-%EB%A9%B4%EC%A0%91-%ED%83%88%EB%9D%BD-%EC%8B%9C%EA%B7%B8%EB%84%90%EC%9D%84-%ED%94%BC%ED%95%98%EB%8A%94-3%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95" target="_blank" rel="noopener">면접왕 이형 — 면접 탈락 시그널을 피하는 3가지 방법</a> · <a href="https://magazine.hankyung.com/job-joy/article/202102187957d" target="_blank" rel="noopener">사람인 — 면접 비매너 조사</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- AI 역량검사 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.38">
     <p class="kicker" data-i18n="s40k">AI Assessment</p>
     <h1 class="slide-title" data-i18n="s40t">AI 역량검사 — 여러분이 가장 유리한 전형</h1>
     <p class="lede" data-i18n="s40l">한국 기업에서 널리 쓰이지만 유학생은 존재조차 모르는 경우가 많습니다. <strong>전략게임 파트는 한국어 능력과 완전히 무관</strong>합니다.</p>
@@ -1636,11 +1786,13 @@
       </div>
     </div>
     <p class="src">출처: <a href="https://community.linkareer.com/employment_data/5872040" target="_blank" rel="noopener">링커리어 — 잡다(JOBDA) 역량검사 2026 총정리</a> · <a href="https://www.jobda.im/acc/tutorial" target="_blank" rel="noopener">잡다 공식 연습 페이지</a> · <a href="https://community.linkareer.com/employment_data/4212475" target="_blank" rel="noopener">링커리어 — AI역량검사 준비 가이드</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 면접 매너 -->
     <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s40kc7">AI Assessment</p>
     <h1 class="slide-title" data-i18n="s40tc7">AI 역량검사 — 여러분이 가장 유리한 전형 (계속)</h1>
     <div class="content-body">
@@ -1657,10 +1809,12 @@
       <p class="note" data-i18n="s40n4"><strong>"영상면접은 결국 한국어라 불리한 것 아닌가요?"</strong> — 형식이 오히려 유리합니다. 30초 준비 후 1분 답변이라 <strong>긴 문장을 만들 필요가 없고, 짧은 두괄식이 잘 맞습니다.</strong> 다만 음성 인식이 개입하므로 <strong>반드시 조용한 공간</strong>에서 응시하세요. 그리고 외워서 읊으면 오히려 감점입니다 — 앞에서 배운 <strong>"키워드 3개 + 숫자 1개"</strong> 방식이 여기서도 그대로 통합니다.</p>
     </div>
     <p class="src">출처: <a href="https://community.linkareer.com/employment_data/5872040" target="_blank" rel="noopener">링커리어 — 잡다(JOBDA) 역량검사 2026 총정리</a> · <a href="https://www.jobda.im/acc/tutorial" target="_blank" rel="noopener">잡다 공식 연습 페이지</a> · <a href="https://community.linkareer.com/employment_data/4212475" target="_blank" rel="noopener">링커리어 — AI역량검사 준비 가이드</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s41k">Manners</p>
     <h1 class="slide-title" data-i18n="s41t">면접에서 감점되는 것들 — 한국어와 무관한 항목이 대부분입니다</h1>
     <div class="content-body">
@@ -1680,12 +1834,14 @@
       <p class="note" data-i18n="s41n">인사담당자 <strong>97.2%</strong>가 "면접 매너가 채용 결과에 영향을 준다"고 답했고, 비매너 발견 시 <strong>55%가 감점, 43.8%가 무조건 탈락</strong>이라고 응답했습니다.</p>
     </div>
     <p class="src">출처: 사람인 「인사담당자 320명 조사」 · <a href="https://magazine.hankyung.com/job-joy/article/202102187957d" target="_blank" rel="noopener">매거진한경</a> · <a href="https://gong.conects.com/exam_info/bbs/view_m/exam_info_strategy?document_idx=3051439" target="_blank" rel="noopener">면접 대기실부터 퇴장까지 A to Z</a> · <a href="https://moel.go.kr/faq/faqView.do?seqRepeat=524" target="_blank" rel="noopener">고용노동부 — 채용절차법 관련 FAQ</a> · <a href="https://www.robertwalters.co.kr/insights/career-advice/blog/web-interview.html" target="_blank" rel="noopener">비대면 화상 인터뷰 준비</a> · <a href="https://mediahub.seoul.go.kr/archives/2018011" target="_blank" rel="noopener">서울시 — 정장 대여·이력서 사진 지원</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 
   <!-- 면접 전 실무 점검 (분리) -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="x2k">Practical Checks</p>
     <h1 class="slide-title" data-i18n="x2t">면접 전에 챙겨야 할 현실적인 것들</h1>
     <div class="content-body">
@@ -1696,10 +1852,12 @@
       <p class="highlight" data-i18n="s41cost"><strong>정장과 증명사진이 부담되신다면</strong> — 학교 경력개발센터와 지자체에서 <strong>면접 정장 무료 대여와 증명사진 촬영</strong>을 지원하는 경우가 많습니다. 다만 사업에 따라 대상이 내국인 청년으로 제한되기도 하니, <strong>외국인 유학생도 신청 가능한지 학교 국제처나 경력개발센터에 먼저 확인하세요.</strong></p>
     </div>
     <p class="src">출처: <a href="https://www.robertwalters.co.kr/insights/career-advice/blog/web-interview.html" target="_blank" rel="noopener">비대면 화상 인터뷰 준비</a> · <a href="https://moel.go.kr/faq/faqView.do?seqRepeat=524" target="_blank" rel="noopener">고용노동부 — 채용절차법 FAQ</a> · <a href="https://mediahub.seoul.go.kr/archives/2018011" target="_blank" rel="noopener">서울시 — 정장 대여·이력서 사진 지원</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
   <!-- 역질문 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.22">
     <p class="kicker" data-i18n="s42k">Your Turn to Ask</p>
     <h1 class="slide-title" data-i18n="s42t">"마지막으로 질문 있으신가요?"</h1>
     <p class="lede" data-i18n="s42l"><strong>1~2개만</strong> 차분히 물으세요. 많이 묻는 것이 목적이 아닙니다.</p>
@@ -1725,11 +1883,13 @@
       <div class="say"><span class="who" data-i18n="s42w1">가장 좋은 형태 · 오늘 대화와 연결하는 질문</span><span data-i18n="s42e1">"오늘 말씀을 들으며 이 직무에서는 ○○ 역량이 특히 중요하다는 점을 느꼈습니다. 입사 전까지 그 부분을 더 보완하고 싶은데, 신입이 초기에 준비해두면 좋은 것이 있다면 조언 부탁드려도 될까요?"</span></div>
     </div>
     <p class="src">출처: <a href="https://www.aceround.app/ko/blog/interview-reverse-question-examples-korea/" target="_blank" rel="noopener">면접 역질문 예시 15가지</a> · <a href="https://bareunjari.com/posts/interview-questions-to-ask/" target="_blank" rel="noopener">바른자리 — 면접 역질문 추천</a> · <a href="https://news.incruit.com/news/newsview.asp?newsno=436499" target="_blank" rel="noopener">인크루트 — 좋은 예 vs 나쁜 예</a> · <a href="https://news.incruit.com/news/newsview.asp?newsno=436429" target="_blank" rel="noopener">인크루트 — 신입 희망연봉 표기법</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- PART6 divider -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.42">
     <p class="kicker" data-i18n="s42kc6">Your Turn to Ask</p>
     <h1 class="slide-title" data-i18n="s42tc6">"마지막으로 질문 있으신가요?" (계속)</h1>
     <div class="content-body">
@@ -1738,18 +1898,22 @@
       <p class="note" data-i18n="s42pay"><strong>연봉은 "묻지 말라"가 아니라 "때가 있다"입니다.</strong> ① 서류·면접 중에는 먼저 꺼내지 마세요. ② 회사가 먼저 물으면 답해도 됩니다 — 신입은 <strong>"회사 내규에 따르겠습니다"</strong>가 가장 무난합니다. ③ <strong>최종 합격 후 처우협의가 정식으로 묻는 자리</strong>입니다. 이때 조건을 확인하고 입사를 결정해도 전혀 문제되지 않습니다. 이력서의 희망연봉란도 <strong>"회사 내규에 따름"</strong>으로 쓰는 것이 안전합니다 — 신입은 대부분 연봉 테이블이 이미 정해져 있습니다.</p>
     </div>
     <p class="src">출처: <a href="https://www.aceround.app/ko/blog/interview-reverse-question-examples-korea/" target="_blank" rel="noopener">면접 역질문 예시 15가지</a> · <a href="https://bareunjari.com/posts/interview-questions-to-ask/" target="_blank" rel="noopener">바른자리 — 면접 역질문 추천</a> · <a href="https://news.incruit.com/news/newsview.asp?newsno=436499" target="_blank" rel="noopener">인크루트 — 좋은 예 vs 나쁜 예</a> · <a href="https://news.incruit.com/news/newsview.asp?newsno=436429" target="_blank" rel="noopener">인크루트 — 신입 희망연봉 표기법</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide divider">
+    <div class="body-wrap" style="zoom:1.06">
     <p class="plab" data-i18n="s43p">PART 7</p>
     <h1 data-i18n="s43t">TOPIK 6급이 알려주지 않는 것들</h1>
     <p class="lede" data-i18n="s43l">여기서부터가 오늘 강의의 핵심입니다. 지금부터 다룰 내용은 TOPIK 교재에 나오지 않고, 한국인 친구도 굳이 설명해주지 않으며, 면접장에서 틀려도 아무도 지적해주지 않는 것들입니다.</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 발음 억양 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.16">
     <p class="kicker" data-i18n="n4k">Accent</p>
     <h1 class="slide-title" data-i18n="n4t">"제 발음과 억양 때문에 감점되나요?"</h1>
     <p class="lede" data-i18n="n4l">많은 분들이 가장 걱정하시는 부분입니다. 답부터 드리겠습니다 — <strong>발음과 억양은 평가 항목이 아닙니다.</strong></p>
@@ -1771,11 +1935,13 @@
       <p class="note" data-i18n="n4n3">그리고 기억하세요 — 면접관은 여러분이 외국인이라는 것을 <strong>이미 알고 있습니다.</strong> 완벽한 한국어를 기대하지 않습니다. 기대하는 것은 <strong>준비된 내용과 성실한 태도</strong>입니다. 실제로 감점 1위는 지각(55.6%)이었지 언어가 아니었습니다.</p>
     </div>
     <p class="src">출처: <a href="https://hanguljobs.com/blog/verify-korean-communication-skills-over-resume" target="_blank" rel="noopener">HangulJobs — 이력서보다 실제 소통 역량을 먼저 검증해야 하는 이유</a> · <a href="https://talent-link.co.kr/blog_detail?bg_idx=253" target="_blank" rel="noopener">탤런트링크 — TOPIK 점수보다 실전 한국어가 중요한 이유</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 합쇼체 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s44k">Speech Level</p>
     <h1 class="slide-title" data-i18n="s44t">면접 60분 동안은 모든 문장을 "-습니다"로 끝내세요</h1>
     <div class="content-body">
@@ -1795,11 +1961,13 @@
       <p class="note" data-i18n="s44n3"><strong>연습 방법:</strong> 예상 답변을 소리 내어 말하면서 <strong>문장 끝만 집중해서 듣는</strong> 연습을 하세요. 녹음해서 다시 들으면 해요체가 섞인 부분이 바로 들립니다. 그리고 주의 — 모든 사람 이름과 직함에 "-님"을 붙이면 오히려 과하게 격식적으로 들립니다.</p>
     </div>
     <p class="src">출처: <a href="https://seoulstart.com/ko/guides/korean-speech-levels" target="_blank" rel="noopener">Seoulstart — 존댓말 vs 반말 완전 정복</a> · <a href="https://namu.wiki/w/%ED%95%9C%EA%B5%AD%EC%96%B4%EC%9D%98%20%EB%86%92%EC%9E%84%EB%B2%95" target="_blank" rel="noopener">한국어의 높임법</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 맞아요 / 사물존칭 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s45k">Critical Detail</p>
     <h1 class="slide-title" data-i18n="s45t">면접관에게 "맞아요"라고 하면 안 되는 이유</h1>
     <div class="content-body">
@@ -1811,11 +1979,13 @@
       </div>
     </div>
     <p class="src">출처: <a href="https://v.daum.net/v/b5gLIBloAz?f=p" target="_blank" rel="noopener">[한국에 살며] 외국인이 헷갈리는 한국어 반응들</a> · <a href="https://namu.wiki/w/%EC%82%AC%EB%AC%BC%EC%A1%B4%EC%B9%AD" target="_blank" rel="noopener">사물존칭</a> · 국립국어원 『표준 언어예절』 기준</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 비자 질문 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.44">
     <p class="kicker" data-i18n="s45kc5">Critical Detail</p>
     <h1 class="slide-title" data-i18n="s45tc5">면접관에게 "맞아요"라고 하면 안 되는 이유 (계속)</h1>
     <div class="content-body">
@@ -1831,10 +2001,12 @@
       </table>
     </div>
     <p class="src">출처: <a href="https://v.daum.net/v/b5gLIBloAz?f=p" target="_blank" rel="noopener">[한국에 살며] 외국인이 헷갈리는 한국어 반응들</a> · <a href="https://namu.wiki/w/%EC%82%AC%EB%AC%BC%EC%A1%B4%EC%B9%AD" target="_blank" rel="noopener">사물존칭</a> · 국립국어원 『표준 언어예절』 기준</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.20">
     <p class="kicker" data-i18n="s46k">The Visa Question</p>
     <h1 class="slide-title" data-i18n="s46t">비자 질문은 약점이 아니라, 여러분이 설명해 줄 수 있는 영역입니다</h1>
     <div class="content-body">
@@ -1845,11 +2017,13 @@
       <div class="say"><span class="who" data-i18n="s46w1">면접에서 이렇게 말하세요 — 외워두면 강력합니다</span><span data-i18n="s46e1">"E-7 스폰서십을 위해 회사가 하실 일은, 제 직무가 공식 E-7 직종 코드에 해당하는지 확인하시고, 해당 직무를 채용해야 하는 이유를 담은 <strong>고용사유서 1~2페이지</strong>를 작성해 주시는 것입니다. 사업자등록증과 납세증명서, 고용계약서를 제 신청서와 함께 제출하면 됩니다. <strong>필요한 서류 목록은 제가 정리해서 드릴 수 있습니다.</strong>"</span></div>
     </div>
     <p class="src">출처: <a href="https://seoulstart.com/ko/guides/d2-to-e7-conversion" target="_blank" rel="noopener">Seoulstart — D-2에서 E-7 전환 로드맵(2026)</a> · <a href="https://kowork.kr/blog/e7-visa-2026-salary-requirements" target="_blank" rel="noopener">KoWork — 2026년 E-7 임금요건</a> · <a href="https://www.shoplworks.com/blog-insight/foreign-employee-visa-e7-hiring-hr-guide-korea" target="_blank" rel="noopener">샤플 — 외국인 채용 가이드</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 스폰서 거절 대응 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.28">
     <p class="kicker" data-i18n="s46kc4">The Visa Question</p>
     <h1 class="slide-title" data-i18n="s46tc4">비자 질문은 약점이 아니라, 여러분이 설명해 줄 수 있는 영역입니다 (계속)</h1>
     <div class="content-body">
@@ -1862,10 +2036,12 @@
       <p class="note" style="color:var(--bad)" data-i18n="s46n7">⚠️ 비자 요건과 임금 기준은 <strong>매년 바뀝니다.</strong> 여기 수치는 2026년 기준이며, 지원 전 반드시 <strong>하이코리아 또는 외국인종합안내센터 1345</strong>에서 최신 내용을 확인하세요. 비자 세부 사항은 오늘 별도 세션에서 더 자세히 다룹니다.</p>
     </div>
     <p class="src">출처: <a href="https://seoulstart.com/ko/guides/d2-to-e7-conversion" target="_blank" rel="noopener">Seoulstart — D-2에서 E-7 전환 로드맵(2026)</a> · <a href="https://kowork.kr/blog/e7-visa-2026-salary-requirements" target="_blank" rel="noopener">KoWork — 2026년 E-7 임금요건</a> · <a href="https://www.shoplworks.com/blog-insight/foreign-employee-visa-e7-hiring-hr-guide-korea" target="_blank" rel="noopener">샤플 — 외국인 채용 가이드</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="n5k">When They Say No</p>
     <h1 class="slide-title" data-i18n="n5t">"비자 지원은 안 합니다"라는 말을 들었을 때</h1>
     <p class="lede" data-i18n="n5l">여기서 대부분 포기합니다. 하지만 이 한 문장에는 <strong>서로 다른 세 가지 이유</strong>가 숨어 있고, 어느 쪽인지 알면 대응이 달라집니다.</p>
@@ -1881,11 +2057,13 @@
       <div class="say"><span class="who" data-i18n="n5w1">이렇게 말해보세요</span><span data-i18n="n5e1">"혹시 절차가 부담되신다면, <strong>필요한 서류 목록과 고용사유서 초안은 제가 정리해서 드릴 수 있습니다.</strong> 그리고 중소벤처기업부를 통해 일부 직종은 <strong>고용추천</strong>을 받을 수 있어서, 회사에서 하실 일이 많이 줄어듭니다."</span></div>
     </div>
     <p class="src">출처: <a href="https://kowork.kr/blog/%EA%B5%AD%EB%AF%BC%EA%B3%A0%EC%9A%A9%EB%B3%B4%ED%98%B8%EC%8B%AC%EC%82%AC%EA%B8%B0%EC%A4%80" target="_blank" rel="noopener">KoWork — E-7과 국민고용보호 심사기준</a> · <a href="https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=86&amp;bcIdx=1065218" target="_blank" rel="noopener">중소벤처기업부 — 외국전문인력 활용 지원사업</a> · <a href="https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000195955" target="_blank" rel="noopener">KDI — 채용 지원제도 활용률</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 장기근속 질문 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.50">
     <p class="kicker" data-i18n="n5kc3">When They Say No</p>
     <h1 class="slide-title" data-i18n="n5tc3">"비자 지원은 안 합니다"라는 말을 들었을 때 (계속)</h1>
     <div class="content-body">
@@ -1893,10 +2071,12 @@
       <p class="note" style="color:var(--bad)" data-i18n="n5n">⚠️ F-2-7의 정확한 배점 기준은 자료마다 다르게 안내되고 있고 제도도 자주 바뀝니다. <strong>"국내 학위 + TOPIK 5~6급이면 유력한 경로"</strong> 정도로 이해하시고, 정확한 점수와 요건은 반드시 <strong>하이코리아·출입국사무소</strong>에서 확인하세요. 오늘 비자 세션에서 더 자세히 다룹니다.</p>
     </div>
     <p class="src">출처: <a href="https://kowork.kr/blog/%EA%B5%AD%EB%AF%BC%EA%B3%A0%EC%9A%A9%EB%B3%B4%ED%98%B8%EC%8B%AC%EC%82%AC%EA%B8%B0%EC%A4%80" target="_blank" rel="noopener">KoWork — E-7과 국민고용보호 심사기준</a> · <a href="https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=86&amp;bcIdx=1065218" target="_blank" rel="noopener">중소벤처기업부 — 외국전문인력 활용 지원사업</a> · <a href="https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000195955" target="_blank" rel="noopener">KDI — 채용 지원제도 활용률</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s47k">"How long will you stay?"</p>
     <h1 class="slide-title" data-i18n="s47t">"언제까지 한국에 계실 계획인가요?"</h1>
     <p class="lede" data-i18n="s47l">거의 반드시 나오는 질문입니다. 질문의 진짜 의도는 <strong>"채용과 비자에 드는 비용을 회수할 만큼 오래 일할 사람인가"</strong>입니다.</p>
@@ -1911,11 +2091,13 @@
       <p class="note" data-i18n="s47n"><strong>솔직함의 수위:</strong> "연봉이 높아서 한국에 왔다"는 실제로 유학생의 27.7%가 꼽은 이유지만, 면접에서 그대로 말하면 이기적 동기로 분류됩니다. 마음은 그대로 두되, <strong>말은 회사에 무엇을 줄 수 있는지의 언어로</strong> 바꿔서 하세요.</p>
     </div>
     <p class="src">출처: 중소기업중앙회 유학생 805명 조사 · <a href="https://www.khan.co.kr/article/202503261439001" target="_blank" rel="noopener">경향신문</a> · <a href="https://seoulstart.com/ko/guides/d2-to-e7-conversion" target="_blank" rel="noopener">Seoulstart — 비자 전환 로드맵</a> · 답변 프레임은 강의용으로 구성</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 막혔을 때 표현 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s48k">Emergency Phrases</p>
     <h1 class="slide-title" data-i18n="s48t">말이 막혔을 때 쓰는 13개의 문장</h1>
     <div class="content-body">
@@ -1952,11 +2134,13 @@
       <p class="note" data-i18n="s48n5"><strong>이 문장들을 외워 가세요.</strong> 긴장하면 아는 표현도 떠오르지 않습니다. 소리 내어 열 번씩만 연습하면, 실제 면접에서 자동으로 나옵니다. 이것 하나만으로 면접에 대한 두려움이 크게 줄어듭니다.</p>
     </div>
     <p class="src">출처: <a href="https://brunch.co.kr/@careerners/65" target="_blank" rel="noopener">면접에서 모르는 질문에 답하는 3가지 솔루션</a> · <a href="https://www.ringleplus.com/en/student/landing/blog/english-interview-study" target="_blank" rel="noopener">링글 — 못 알아들었을 때의 대응</a> · 일부 표현은 표준 비즈니스 한국어로 강의용 구성</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 4주 루틴 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s49k">Training Plan</p>
     <h1 class="slide-title" data-i18n="s49t">시험 한국어에서 "말하는 한국어"로 — 4주 훈련</h1>
     <p class="lede" data-i18n="s49l">읽기·듣기 실력은 이미 충분합니다. 부족한 것은 <strong>입으로 나오는 속도</strong>뿐이고, 그것은 훈련으로 해결됩니다.</p>
@@ -1973,11 +2157,13 @@
       <div class="highlight" data-i18n="s49hl"><strong>가장 중요한 원칙 — 글로 준비한 답변과 입으로 나오는 답변은 완전히 다릅니다.</strong> 자소서를 쓰는 데 시간을 다 쓰고 말하기 연습을 하지 않는 것이 유학생이 가장 많이 하는 실수입니다. <strong>쓴 것은 반드시 소리 내어 말해보세요.</strong> 하루 30분이면 충분합니다.</div>
     </div>
     <p class="src">출처: <a href="https://talkpal.ai/ko/%ED%95%9C%EA%B5%AD%EC%96%B4-%EB%A7%90%ED%95%98%EA%B8%B0-%EC%97%B0%EC%8A%B5-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%9C%A0%EC%B0%BD%ED%95%B4%EC%A7%80%EB%8A%94/" target="_blank" rel="noopener">Talkpal — 한국어 말하기 연습 가이드</a> · <a href="https://hanguljobs.com/blog/topik-guide-for-job-seekers-a8f2c1" target="_blank" rel="noopener">HangulJobs — TOPIK 가이드</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 채용 일정 -->
   <section class="slide">
+    <div class="body-wrap">
     <p class="kicker" data-i18n="s50k">Timing</p>
     <h1 class="slide-title" data-i18n="s50t">언제 준비를 시작해야 할까요</h1>
     <div class="content-body">
@@ -1989,11 +2175,13 @@
       <div class="highlight" data-i18n="s50hl"><strong>공채 시즌을 기다리면 늦습니다.</strong> 이제 대부분의 기업이 필요할 때 바로 뽑습니다. 즉 <strong>공고가 뜬 다음에 준비를 시작하면 이미 늦다</strong>는 뜻입니다. 자소서 재료(경험정리표)와 필살기를 <strong>미리 만들어 두고, 공고가 뜨면 3일 안에 지원</strong>할 수 있는 상태를 유지하는 것이 유일한 방법입니다.</div>
     </div>
     <p class="src">출처: <a href="https://info.incruit.com/pr/report_view.asp?newsno=437174" target="_blank" rel="noopener">인크루트 — 기업 897개사 채용 동향 조사(2025)</a> · <a href="https://www.etoday.co.kr/news/view/2615962" target="_blank" rel="noopener">이투데이 — D-10→E-7 전환 4년새 2배</a> · <a href="https://www.samsungcareers.com/guide/process" target="_blank" rel="noopener">삼성 채용 프로세스</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 체크리스트 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.14">
     <p class="kicker" data-i18n="s50kc2">Timing</p>
     <h1 class="slide-title" data-i18n="s50tc2">언제 준비를 시작해야 할까요 (계속)</h1>
     <div class="content-body">
@@ -2010,10 +2198,12 @@
       <p class="note" data-i18n="s50n">참고로 D-10(구직비자)을 거쳐 E-7으로 전환한 사례가 최근 4년 사이 약 2배로 늘었습니다. <strong>졸업 즉시 취업이 안 되어도 길은 있습니다</strong> — 다만 그 길도 미리 알고 준비해야 쓸 수 있습니다.</p>
     </div>
     <p class="src">출처: <a href="https://info.incruit.com/pr/report_view.asp?newsno=437174" target="_blank" rel="noopener">인크루트 — 기업 897개사 채용 동향 조사(2025)</a> · <a href="https://www.etoday.co.kr/news/view/2615962" target="_blank" rel="noopener">이투데이 — D-10→E-7 전환 4년새 2배</a> · <a href="https://www.samsungcareers.com/guide/process" target="_blank" rel="noopener">삼성 채용 프로세스</a></p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.12">
     <p class="kicker" data-i18n="s51k">Summary</p>
     <h1 class="slide-title" data-i18n="s51t">오늘의 체크리스트</h1>
     <div class="content-body">
@@ -2034,11 +2224,13 @@
         <li><span class="box"></span><span data-i18n="s51c14">면접 전날 <strong>내가 제출한 자소서</strong>를 다시 읽었는가?</span></li>
       </ul>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 오늘 밤에 할 3가지 -->
   <section class="slide">
+    <div class="body-wrap" style="zoom:1.38">
     <p class="kicker" data-i18n="s52k">Start Tonight</p>
     <h1 class="slide-title" data-i18n="s52t">집에 가셔서 오늘 밤에 딱 3가지만 하세요</h1>
     <div class="content-body">
@@ -2049,11 +2241,13 @@
       </div>
       <div class="highlight" data-i18n="s52hl">오늘 강의에서 딱 한 문장만 기억하신다면 이것입니다 — <strong>"자소서는 지원할 때 쓰는 것이 아니라, 지금부터 모아두는 것이다."</strong> 여러분에게는 이미 쓸 이야기가 있습니다. 아직 그것을 면접관이 알아볼 수 있는 형태로 정리하지 않았을 뿐입니다.</div>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- 참고자료 -->
     <section class="slide">
+    <div class="body-wrap" style="zoom:1.28">
     <p class="kicker" data-i18n="s52kc1">Start Tonight</p>
     <h1 class="slide-title" data-i18n="s52tc1">집에 가셔서 오늘 밤에 딱 3가지만 하세요 (계속)</h1>
     <div class="content-body">
@@ -2069,10 +2263,12 @@
       <p class="note" data-i18n="s52help"><strong>AI로 먼저 다듬은 뒤 사람에게 보이세요.</strong> 그러면 같은 시간에 훨씬 깊은 피드백을 받을 수 있습니다.</p>
       <p class="note" data-i18n="s52n">그리고 마지막으로 — <strong>완벽한 한국어를 기다리지 마세요.</strong> 인사담당자가 가장 중요하게 보는 것은 직무 경험(43.8%)이고, 문장력은 좋은 자소서 요소 중 6위(12.5%)에 불과합니다. 지금의 한국어로도 충분히 시작할 수 있습니다.</p>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
 <section class="slide">
+    <div class="body-wrap" style="zoom:1.08">
     <p class="kicker" data-i18n="s53k">References</p>
     <h1 class="slide-title" data-i18n="s53t">오늘 강의에 참고한 자료 <span class="tag apx">보관용</span></h1>
     <div class="content-body">
@@ -2133,11 +2329,13 @@
       </table>
       <p class="note" data-i18n="s53n">※ 통계 수치는 조사 시점이 서로 다릅니다(2017~2026년). 비자 요건과 임금 기준은 매년 변경되므로 <strong>지원 전 반드시 하이코리아 또는 1345에서 최신 정보를 확인</strong>하시기 바랍니다.</p>
     </div>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
   <!-- Q&A -->
   <section class="slide qa-slide">
+    <div class="body-wrap" style="zoom:1.02">
     <div class="qa-mark">Q&amp;A</div>
     <h1 data-i18n="s54t">궁금하신 점을 질문해 주세요</h1>
     <p class="lede" style="text-align:center;margin:0 auto 14px" data-i18n="s54l">자소서, 면접, 기업 분석, 비자, 취업 준비 전반에 대해<br>무엇이든 편하게 물어보세요. 한국어로 하셔도, 베트남어로 하셔도 괜찮습니다.</p>
@@ -2146,6 +2344,7 @@
       <span data-i18n="s54m2">한국 취업 종합 가이드 · 2026. 9. 19. (토)</span>
     </div>
     <p class="note" style="text-align:center;margin-top:14px;max-width:760px" data-i18n="s54n">오늘 다 여쭤보지 못한 것이 있다면 이 자료를 나중에 다시 보세요.</p>
+    </div>
     <div class="footer-bar"><span class="brand">CAREER · VISA · TOPIK CONSULTING</span><span class="pageno"></span></div>
   </section>
 
